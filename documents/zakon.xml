@@ -70,7 +70,11 @@
                             </num>
                             <content eId="art_239_para_1_point_2_content">
                                 <p>
-                                    Za pokušaj djela iz stava 1 ovog člana kazniće se.
+                                    Za pokušaj djela iz 
+                                    <ref href="/krivica#art_239_para_1_point_1">
+                                        stava 1
+                                    </ref> 
+                                    ovog člana kazniće se.
                                 </p>
                             </content>
                         </point>
@@ -90,7 +94,11 @@
                             </num>
                             <content eId="art_240_para_1_point_1_content">
                                 <p>
-                                    Učinilac djela krađe (član 239) kazniće se zatvorom od jedne do osam godina, ako je krađa izvršena:
+                                    Učinilac djela krađe (
+                                        <ref href="/krivica#art_239">
+                                            član 239
+                                        </ref>
+                                        ) kazniće se zatvorom od jedne do osam godina, ako je krađa izvršena:
                                     1) obijanjem ili provaljivanjem zatvorenih zgrada, soba, kasa, ormana ili drugih zatvorenih prostora ili drugim
                                     savlađivanjem većih prepreka;
                                     2) od strane više lica koja su se udružila radi vršenja krađa;
@@ -107,7 +115,7 @@
                             </num>
                             <content eId="art_240_para_1_point_2_content">
                                 <p>
-                                    Kaznom iz stava 1 ovog člana kazniće se i učinilac djela krađe ako vrijednost ukradenih stvari prelazi iznos od tri hiljade eura ili ukradena stvar predstavlja kulturno ili prirodno dobro.
+                                    Kaznom iz <ref href="/krivica#art_240_para_1_point_1">stava 1</ref> ovog člana kazniće se i učinilac djela krađe ako vrijednost ukradenih stvari prelazi iznos od tri hiljade eura ili ukradena stvar predstavlja kulturno ili prirodno dobro.
                                 </p>
                             </content>
                         </point>
@@ -167,7 +175,7 @@
                             </num>
                             <content eId="art_241_para_1_point_4_content">
                                 <p>
-                                    Ako je djelo iz st. 1 do 3 ovog člana učinjeno od strane grupe ili je nekom licu sa umišljajem nanesena teška tjelesna povreda, učinilac će se kazniti zatvorom od tri do petnaest godina.
+                                    Ako je djelo iz <ref href="/krivica#art_241_para_1_point_1">st. 1</ref> do <ref href="/krivica#art_241_para_1_point_3">3</ref> ovog člana učinjeno od strane grupe ili je nekom licu sa umišljajem nanesena teška tjelesna povreda, učinilac će se kazniti zatvorom od tri do petnaest godina.
                                 </p>
                             </content>
                         </point>
@@ -177,7 +185,7 @@
                             </num>
                             <content eId="art_241_para_1_point_5_content">
                                 <p>
-                                    Ako je pri izvršenju djela iz st. 1 do 3 ovog člana neko lice sa umišljajem lišeno života, učinilac će se kazniti zatvorom najmanje deset godina ili kaznom dugotrajnog zatvora.
+                                    Ako je pri izvršenju djela iz <ref href="/krivica#art_241_para_1_point_1">st. 1</ref> do <ref href="/krivica#art_241_para_1_point_3">3</ref> ovog člana neko lice sa umišljajem lišeno života, učinilac će se kazniti zatvorom najmanje deset godina ili kaznom dugotrajnog zatvora.
                                 </p>
                             </content>
                         </point>
@@ -187,7 +195,7 @@
                             </num>
                             <content eId="art_241_para_1_point_6_content">
                                 <p>
-                                    Ako vrijednost ukradenih stvari iz stava 1 ovog člana ne prelazi iznos od stopedeset eura, a učinilac je išao za tim da pribavi malu imovinsku korist, učinilac će se kazniti zatvorom do tri godine.
+                                    Ako vrijednost ukradenih stvari iz <ref href="/krivica#art_241_para_1_point_1">st. 1</ref> ovog člana ne prelazi iznos od stopedeset eura, a učinilac je išao za tim da pribavi malu imovinsku korist, učinilac će se kazniti zatvorom do tri godine.
                                 </p>
                             </content>
                         </point>
@@ -197,7 +205,7 @@
                             </num>
                             <content eId="art_241_para_1_point_7_content">
                                 <p>
-                                    Za pokušaj djela iz stava 6 ovog člana kazniće se.
+                                    Za pokušaj djela iz <ref href="/krivica#art_241_para_1_point_6">st. 6</ref> ovog člana kazniće se.
                                 </p>
                             </content>
                         </point>
