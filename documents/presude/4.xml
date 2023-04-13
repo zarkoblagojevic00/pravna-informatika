@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd
+                        "
+    xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17"
+    xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Baru
+                    </FRBRauthor>
+                    <FRBRdate date="2021-04-15">
+                        2021-04-15
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 83/2021
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Bar"
+                    showAs="Osnovni sud u Baru" />
+                <TLCPerson eId="spasojevic" href="/ontology/person/spasojevic"
+                    showAs="Tamara Spasojevic" />
+                <TLCPerson eId="stanisic" href="/ontology/person/stanisic" showAs="Ana Stanisic" />
+                <TLCPerson eId="ha" href="/ontology/person/ha" showAs="H.A." />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <ref href="/os"> Osnovni sud u Baru </ref>, <ref href="/judge">sudija</ref> 
+                <ref
+                    href="/spasojevic">Tamara Spasojević</ref>, uz učešće zapisničarke <ref
+                    href="/stanisic">Ane Stanišić</ref>, u krivičnom postupku protiv <ref
+                    href="/defendant">optuženog</ref> <ref
+                    href="/ha">H. A.</ref>, zbog krivičnog djela - teška krađa iz <ref
+                    href="krivica#art_240">čl. 240 </ref> st. 1 tačka 1 Krivičnog zakonika Crne Gore
+                i iz čl. 240 st. 2 u vezi stava 1 Krivičnog zakonika Crne Gore, po optužnici
+                Osnovnog državnog tužilaštva u Baru Kt.br.11/21 od 08.03.2021.godine, nakon održanog
+                glavnog i javnog pretresa dana 13.04.2021.godine u prisustvu zastupnika optužbe
+                Osnovnog državnog tužioca u Baru Radmile Gačević i optuženog, dana 15.04.2021.godine
+                donio i javno objavio P R E S U D U Optuženi, H. A. , JMB ….. , od oca H. i majke A.
+                , rođene M. , rođen …..godine u P. sa prebivalištem u B. P. , …. , državljanin C.G.
+                , neoženjen, bez djece, pismen sa završenom srednjom školom, lošeg imovnog stanja,
+                osuđivan i to presudama: Osnovnog suda u Baru K br. 140/08 od 20.10.2008.godine,
+                zbog krivičnog djela iz čl. 240 st. 1 tač. 3 KZ u vezi čl. 49 KZ (teška krađa u
+                produženom trajanju), na kaznu zatvora u trajanju od 1 godine, presudom Osnovnog
+                suda u Ulcinju, K br. 131/08 od 11.11.2008.godine, zbog krivičnog djela iz čl. 240
+                st. 1 KZ (teška krađa), na kaznu zatvora u trajanju od 3 mjeseca, Osnovnog suda u
+                Baru, K br. 72/08 od 23.04.2008.godine, zbog krivičnog djela iz č. 239 st. 1 u vezi
+                čl. 49 KZ CG (produženo krivičnog djelo krađa), na kaznu zatvora u trajanju od 8
+                mjeseci, Osnovni sud Bijelo Polje K br. 595/08 od 04.12.2008.godine, zbog krivičnog
+                djela iz čl. 239 st. 1 KZ (krađa), na novčanu kaznu u iznosu od 1.200,00 eura,
+                Osnovni sud Podgorica K br. 08/1373 od 22.04.2009.godine, zbog krivičnog djela iz
+                čl. 240 st. 1 u vezi čl. 49 KZ CG (produženo krivično djelo teška krađa), na kaznu
+                zatvora u trajanju od 8 mjeseci, Osnovni sud Bijelo Polje, K br. 716/08 od
+                10.03.2009.godine, zbog krivičnog djela iz l. 239 st. 1 KZ (krađa) i krivičnog djela
+                244 st. 1 KZ (prevara), na Osnovni Sud u Baru K 83/2021 15. April 2021 kaznu zatvora
+                u trajanju od 6 mjeseci, Osnovni sud u Baru K br. 451/08 od 06.04.2009.godine, zbog
+                krivičnog djela iz čl. 240 st. 1 tač. 3 KZ CG (teška krađa), na kaznu zatvora u
+                trajanju od 1 godine i 2 mjeseca, Osnovni sud u Podgorici K br. 09/71 od
+                29.06.2009.godine, zbog krivičnog djela iz čl. 239 st. 1 KZ (krađa), na kaznu
+                zatvora u trajanju od 3 mjeseca, Osnovni sud Podgorica K.br.123/13 od
+                12.06.2013.godine, zbog krivičnog djela iz čl. 240 st. 1 tač. 1 u vezi sa čl. 49 KZ
+                CG (teška krađa u produženom trajanju), na kaznu zatvora u trajanju od 1 godine i 2
+                mjeseca i Osnovni sud u Podgorici K.br. 99/13 od 13.12.2013.godine, zbog krivičnog
+                djela iz čl. 240 st. 1 tač. 1 u vezi sa čl. 49 KZ CG (teška krađa u produženom
+                trajanju), na kaznu zatvora u trajanju od 2 godine i 6 mjeseci, presudom Osnovnog
+                suda u Bijelom Polju K.br.301/2014.godine koja je postala pravosnažna dana
+                09.03.2015.godine, zbog krivičnog djela -krađa iz čl. 239 st. 1 KZ CG, na kaznu
+                zatvora u trajanju od 1 godine, presudom Osnovnog suda u Podgorici K.br. 829/14 koja
+                je postala pravosnažna dana 27.04.2015.godine, zbog krivičnog djela iz čl. 240 st. 1
+                tač. 1 KZ CG (teška krađa), na kaznu zatvora u trajanju od 4 godine, presudom
+                Osnovnog suda u Podgorici K.br. 121/15 koja je postala pravosnažna dana
+                27.04.2015.godine, zbog krivičnog djela - krađa iz čl. 239 st. 1 KZ CG, na kaznu
+                zatvora u trajanju od 1 godine, presudom Osnovnog suda u Podgorici K.br. 457/14 koja
+                je postala pravosnažna dana 26.10.2015.godine, zbog krivičnog djela - krađa iz čl.
+                239 st. 1 KZ CG, na kaznu zatvora u trajanju od 6 mjeseci, presudom Osnovnog suda u
+                Baru K.br. 63/13 koja je postala pravosnažna dana 02.03.2015.godine, zbog krivičnog
+                djela iz čl. 240 st. 1 tač. 1 u vezi sa čl. 49 KZ CG (teška krađa u produženom
+                trajanju), na kaznu zatvora u trajanju od 2 godine i 6 mjeseci, presudom Osnovnog
+                suda u Baru K.br.271/14 koja je postala pravosnažna dana 08.09.2014.godine, zbog
+                produženog krivičnog - teška krađa iz čl. 240 st. 1 tač.1 u vezi čl. 49 KZ CG, kojom
+                je osuđen na kaznu zatvora u trajanju od 3 godine i presudom Osnovnog suda u Baru Kv
+                br. 181/17 koja je postala pravosnažna dana 11.08.2017.godine, a kojom su preinačene
+                presude Osnovnog suda u Baru Kv br. 181/17 od 11.08.2017.godine, K.br. 271/14 od
+                08.09.2014.godine i K.br. 63/13 od 02.03.2015.godine i izrečena jedinstvena kazna
+                zatvora u trajanju od 5 godina i 5 mjeseci. KRIV JE Zato što je: Dana 17.marta
+                2014.godine u Baru, u naselju Polje, svjestan svog djela čije izvršenje je htio i
+                znajući da je njegovo djelo zabranjeno, savlađivanjem većih prepreka i obijanjem
+                tuđu pokretnu stvar oduzeo drugom u namjeri da njenim prisvajanjem sebi pribavi
+                protivpravnu imovinsku korist, na način što je došao do zadnjeg dijela kuće,
+                vlasništvo oštećenog P. G. , a potom se uz pomoć palete popeo do prozora sobe koji
+                se nalazi na visini od oko 2,30m, gdje je upotrebom fizičke sile polomio prozor,
+                ušao u sobu, izvršio premetačinu, nakon čega je iz spavaće sobe oduzeo i prisvojio
+                nakit i to: prsten od bijelog zlata sa dijamantima u obliku talasa, koji su takođe
+                od dijamanata, ogrlicu i narukvicu od bijelog zlata sa tri kružića, ogrlicu od žutog
+                zlata sa cirkonima, minđuše od svarovskih kristala, prsten od žutog zlata sa
+                cirkonima, muški sat marke "Sektor" vrsta kompas, prsten od bijelog zlata sa biserom
+                u sredini i sa strana sa po jednim manjim dijamantom, ogrlicu od bijelog zlata koja
+                je na prednjoj strani imala tri cvjetića od bijelog zlata, a svaki u sredini je imao
+                manji dijamant, srebrne minđuše sa plavim safirom u obliku kruga, svarovski minđuše
+                u obliku suze, svarovski ogrlicu napravljenu od više oblika suze od kristala,
+                narukvicu od bijelog zlata, koja se sastoji od četiri do pet pločica koje su
+                povezane lančićem, ogrlicu od bijelog zlata sa crvenim rubinom u obliku suze,
+                svarovski narukvicu crvene boje, jednu srebrnu minđušu, koja na dnu ima svarovski
+                kristal, srebrnu narukvicu koja je povezana sa prstenom i koja ima na sebi pet
+                tirkiznih kamena, svarovski ogrlicu sa sajlom od bijelog zlata i privjeskom kojeg
+                čine četiri kamena ljubičaste i roze boje, prsten od žutog zlata sa kamenom od
+                cirkona, prsten od starinskog srebra sa zelenim kamenom, minđuše od starinskog
+                srebra sa zelenim kamenom, minđuše od starog srebra u obliku suze, ogrlicu od
+                bijelog zlata sa cirkonom u vidu privjerska, par minđuša od bijelog zlata u obliku
+                srca, srebrne minđuše od starinskog srebra u obliku alki, srebrne minđuše koje su
+                viseće i pri dnu su u obliku suze i sunčane naočare marke "Cavali", sve ukupne
+                vrijednosti 8.338,00 eura, čime je pribavio protivpravnu imovinsku korist u
+                vrijednosti oduzetog nakita, - čime je učinio krivično djelo - teška krađa iz čl.
+                240 st. 1 tačka 1 Krivičnog zakonika Crne Gore i iz čl. 240 st. 2 u vezi stava 1
+                Krivičnog zakonika Crne Gore. </p>
+            <conclusions>
+                <p> Pa sud optuženog primjenom citiranog zakonskog propisa te odredbi čl. 4, 5, 13,
+                    15, 32, 36 i 42 Krivičnog
+                    zakonika Crne Gore, kao i čl.226, 229 i 374 Zakonika o krivičnom postupku
+                    O S U Đ U J E
+                    Na kaznu zatvora u trajanju od 3 (tri) godine.
+                    Optuženi je dužan da na ime imovinsko pravnog zahtjeva u vidu naknade štete
+                    oštećenom P. G. isplati iznos
+                    od 8.338,00 eura, dok se za višak postavljenog imovinsko pravnog zahtjeva preko
+                    dosuđenog oštećeni
+                    upućuje na parnični postupak.
+                    Optuženi je dužan da na ime troškova krivičnog postupka uplati ovom sudu iznos
+                    od 71,50 eura, a na osnovu
+                    sudskog paušala iznos od 50,00 eura, a sve u roku od 15 dana po pravosnažnosti
+                    presude, pod prijetnjom
+                    prinudnog izvršenja.
+                </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

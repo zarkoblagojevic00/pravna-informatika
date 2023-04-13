@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd
+                        "
+    xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17"
+    xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Podgorici
+                    </FRBRauthor>
+                    <FRBRdate date="2021-02-16">
+                        2021-02-16
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 34/2021
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica"
+                    showAs="Osnovni sud u Podgorici" />
+                <TLCPerson eId="vujanovic" href="/ontology/person/vujanovic"
+                    showAs="Nenad Vujanović" />
+                <TLCPerson eId="paunovic" href="/ontology/person/paunovic" showAs="Nataša Paunović" />
+                <TLCPerson eId="mg" href="/ontology/person/ir" showAs="M.G." />
+                <TLCPerson eId="nr" href="/ontology/person/ir" showAs="N.R." />
+                <TLCRole eId="attorney" href="/ontology/role/attorney" showAs="Attorney" />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <ref href="/os"> Osnovni sud u Podgorici </ref>, <ref href="/judge">sudija</ref> 
+                <ref
+                    href="/vujanovic">Nenad Vujanović</ref>, uz učešće zapisničarke <ref
+                    href="/paunovic">Nataše Paunović</ref>, u krivičnom postupku protiv optuženog <ref
+                    href="/mg">M. G.</ref>, koga brani <ref href="/attorney">advokat</ref> <ref
+                    href="nr">N. R.</ref> , zbog produženog krivičnog djela krađa iz <ref
+                    href="krivica#art_239">čl. 239</ref> st. 1 u vezi čl. 49 Krivičnog zakonika Crne
+                Gore, postupajući po optužnom predlogu ODT Podgorica Kt. br. 1930/20 od 20.01.2021.
+                godine, nakon pravosnažnosti rješenja o usvajanju sporazuma o priznanju krivice za
+                okrivljenog K. br. 34/21 od 16.02.2021. godine, dana 16.02.2021. godine, donio je P
+                R E S U D U Okrivljeni: M. G., ID xxxxxxx, od oca R. i majke M., rođene I., rođen
+                xx.xx.19xx. godine u Đakovici-Republika Kosovo, sa prebivalištem u Podgorici, V. R.
+                bb, državljanin Republike Kosovo, u vanbračnoj zajednici, otac jednog maloljetnog
+                djeteta, završio šest razreda osnovne škole, po zanimanju fizički radnik, lošeg
+                imovnog stanja, osuđivan presudom Osnovnog suda u Podgorici K. br. 964/13 od
+                22.01.2015. godine, zbog krivičnog djela krađa iz čl. 239 st. 1 Krivičnog zakonika
+                Crne Gore, izrečena uslovna osuda 3 (tri) mjeseca zatvora uslovno na 1 (jednu)
+                godinu, presudom Osnovnog suda u Podgorici K. br. 267/14 od 23.06.2014. godine, zbog
+                krivičnog djela krađa iz čl. 239 st. 1 u vezi čl. 23 st. 2 Krivičnog zakonika Crne
+                Gore, izrečena uslovna osuda 3 (tri) mjeseca zatvora uslovno na 1 (jednu) godinu,
+                presudom Osnovnog suda u Podgorici Kv.br. 375/18 od 04.06.2018. godine, (a kojom su
+                preinačene presude Osnovnog suda u Podgorici Kv.br. 2/17 od 26.01.2017. godine
+                (kojom su preinačene presude Osnovnog suda u Podgorici K. br. 460/15 od 28.04.2016.
+                godine zbog krivičnog djela teška krađa iz čl. 240 st. 1 tač. 1 u vezi čl. 23 st. 2
+                Krivičnog zakonika Crne Gore i presuda Osnovnog suda u Podgorici K. br. 52/16 od
+                08.04.2016. godine zbog produženog krivičnog djela teška krađa iz čl. 240 st. 1 tač.
+                1 u vezi čl. 23 st. 2 i čl. 49 Krivičnog zakonika Crne Gore) i K.br. 304/17 od
+                02.11.2017. godine), zbog krivičnog djela krađa iz čl. 239 st. 1 u vezi čl. 23 st. 2
+                Krivičnog zakonika Crne Gore, na jedinstvenu kaznu zatvora u trajanju od 2 (dvije)
+                godine i 7 (sedam) mjeseci, te konačno presudom Osnovnog suda u Podgorici K. br.
+                675/18 od 18.01.2019. godine zbog krivičnog djela krađa iz čl. 239 st. 1 u vezi čl.
+                23 st. 2 Krivičnog Osnovni Sud u Podgorici K 34/2021 16. Februar 2021 zakonika Crne
+                Gore, na kaznu zatvora u trajanju od 9 (devet) mjeseci, u pritvoru od 24.12.2020.
+                godine od 22,00 časova, pa nadalje. K r i v j e Što je: Dana 18.12.2020. godine, oko
+                13,00 časova u Podgorici, u Ulici Vuka Karadžića, svjestan svog djela čije izvršenje
+                je htio i znajući da je njegovo djelo zabranjeno, a u namjeri da sebi pribavi
+                protivpravnu imovinsku korist u iznosu preko 150,00 eura, oduzeo drugom tuđe
+                pokretne stvari, na način što je prišao zadnjem dijelu vozila marke "Mercedes"
+                registarskih oznaka PG KZ xxx, iskoristio otključanost vozila i iz njega oduzeo i
+                prisvojio bušilicu marke "Dewalt", vrijednosti 134,24 eura, motalicu sa kablom od
+                25m, vrijednosti 44,80 eura, brusilicu marke "Bosch", vrijednosti 52,11 eura, kao i
+                nastavke za bušilicu "Dewalt", vrijednosti 106,88 eura i šrafilicu marke "Dewalt"
+                vrijednosti 246,40 eura, ukupne vrijednosti 584,43 eura, sve vlasništvo oštećenog
+                privrednog društva "T. t. PG", čime je sebi pribavio protivpravnu imovinsku korist u
+                vrijednosti oduzetih predmeta. Dana 23.12.2020. godine, oko 12,00 časova u
+                Podgorici, na Trgu nezavisnosti, svjestan svog djela čije izvršenje je htio i
+                znajući da je njegovo djelo zabranjeno, a u namjeri da sebi pribavi protivpravnu
+                imovinsku korist u iznosu preko 150,00 eura, oduzeo drugom tuđe pokretne stvari, na
+                način što je ušao kroz otvorena vrata butika "S.", vlasništvo oštećene J. M. i
+                iskoristio njenu nepažnju, te iz objekta oduzeo i prisvojio pet jakni i to četiri
+                jakne marki "Lugano" i "Best", vrijednosti 581,73 eura i jednu jaknu nepoznate
+                marke, vrijednosti 90,77 eura, ukupne vrijednosti 672,50 eura, vlasništvo oštećene
+                J. M., čime je sebi pribavio protivpravnu imovinsku korist u vrijednosti oduzetih
+                jakni. -čime je učinio produženo krivično djelo krađa iz čl. 239 st. 1 u vezi čl. 49
+                Krivičnog zakonika Crne Gore. </p>
+            <conclusions>
+                <p> Pa ga sud primjenom citirane zakonske odredbe, te čl. 4 st. 2, čl. 32, 36, 42
+                    st. 1 i čl. 51 Krivičnog zakonika Crne
+                    Gore, te čl. 226, 229, 239 i 374 Zakonika o krivičnom postupku,
+                    O S U Đ U J E
+                    Na kaznu zatvora u trajanju od 10 (deset) mjeseci, u koju kaznu mu se ima
+                    uračunati vrijeme provedeno u
+                    pritvoru od 24.12.2020. godine od 22,00 časova, pa nadalje.
+                    Usvaja se imovinskopravni zahtjev, pa se obavezuje okrivljeni da na ime naknade
+                    materijalne štete isplati
+                    oštećenom privrednom društvu "T. t. PG" iznos od 405,39 eura, u roku od 15 dana
+                    od dana pravosnažnosti
+                    presude donijete na osnovu sporazuma o priznanju krivice, pod prijetnjom
+                    izvršenja.
+                    Obavezuje se okrivljeni da na ime troškova krivičnog postupka u korist budžeta
+                    Crne Gore uplati novčani
+                    iznos od 90,50 eura, u roku od 15 od dana pravosnažnosti presude pod prijetnjom
+                    izvršenja, kao i troškove
+                    koji se odnose na nagradu za rad braniocu po službenoj dužnosti, a o čemu će sud
+                    odlučiti posebnim
+                    rješenjem shodno čl. 227 st. 2 Zakonika o krivičnom postupku. </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>
