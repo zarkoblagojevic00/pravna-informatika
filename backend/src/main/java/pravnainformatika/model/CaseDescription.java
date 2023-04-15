@@ -20,16 +20,21 @@ public class CaseDescription implements CaseComponent {
     private String tuzilac;
     private String okrivljeni;
     private String krivicnoDelo;
-    private List<String> telesnePovrede = new ArrayList<String>();
+    private double vrednost;
+    private String nasilno;
+    private String umisljaj;
+    private String nepogoda;
     private String vrstaPresude;
-    private List<String> primenjeniPropisi = new ArrayList<String>();
+    private double kazna;
+    private List<String> primenjeniPropisi = new ArrayList<>();
 
     @Override
     public String toString() {
         return "CaseDescription [id=" + id + ", sud=" + sud + ", poslovniBroj=" + poslovniBroj + ", sudija=" + sudija
                 + ", tuzilac=" + tuzilac + ", okrivljeni=" + okrivljeni + ", krivicnoDelo=" + krivicnoDelo
-                + ", telesnePovrede=" + telesnePovrede + ", vrstaPresude=" + vrstaPresude + ", primenjeniPropisi="
-                + primenjeniPropisi + "]";
+                + ", vrednost=" + vrednost + ", nasilno=" + nasilno + ", umisljaj=" + umisljaj
+                + ", nepogoda=" + nepogoda + ", vrstaPresude=" + vrstaPresude + ", kazna(trajanje/evra)=" + kazna
+                + ", primenjeniPropisi=" + primenjeniPropisi + "]";
     }
 
     @Override
