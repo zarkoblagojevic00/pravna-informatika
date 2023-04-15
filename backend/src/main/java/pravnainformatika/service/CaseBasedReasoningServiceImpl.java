@@ -17,7 +17,9 @@ import pravnainformatika.model.CaseDescription;
 import pravnainformatika.service.interfaces.CaseBasedReasoningService;
 import pravnainformatika.utils.CsvConnector;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 @Service
 public class CaseBasedReasoningServiceImpl implements CaseBasedReasoningService, StandardCBRApplication {
@@ -27,7 +29,8 @@ public class CaseBasedReasoningServiceImpl implements CaseBasedReasoningService,
     NNConfig simConfig;  /** KNN configuration */
 
     @Override
-    public void start(CaseDTO caseDTO) {
+    public List<String> start(CaseDTO caseDTO) {
+        List<String> similarCases = new ArrayList<>();
         try {
             configure();
 
@@ -44,12 +47,14 @@ public class CaseBasedReasoningServiceImpl implements CaseBasedReasoningService,
 
             query.setDescription(caseDescription);
 
-            cycle(query);
+            similarCases = getSimilarCases(query);
 
             postCycle();
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        return similarCases;
     }
 
     @Override
@@ -82,8 +87,8 @@ public class CaseBasedReasoningServiceImpl implements CaseBasedReasoningService,
     public CBRCaseBase preCycle() throws ExecutionException {
         _caseBase.init(_connector);
         java.util.Collection<CBRCase> cases = _caseBase.getCases();
-		for (CBRCase c: cases)
-			System.out.println(c.getDescription());
+//		for (CBRCase c: cases)
+//			System.out.println(c.getDescription());
         return _caseBase;
     }
 
@@ -94,6 +99,15 @@ public class CaseBasedReasoningServiceImpl implements CaseBasedReasoningService,
         System.out.println("Retrieved cases:");
         for (RetrievalResult nse : eval)
             System.out.println(nse.get_case().getDescription() + " -> " + nse.getEval());
+    }
+
+    public List<String> getSimilarCases(CBRQuery query) throws ExecutionException {
+        Collection<RetrievalResult> eval = NNScoringMethod.evaluateSimilarity(_caseBase.getCases(), query, simConfig);
+        eval = SelectCases.selectTopKRR(eval, 5);
+        List<String> similarCases = new ArrayList<>();
+        for (RetrievalResult nse : eval)
+            similarCases.add(nse.get_case().getDescription() + " -> " + nse.getEval());
+        return similarCases;
     }
 
     @Override
