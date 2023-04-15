@@ -29,7 +29,7 @@ public class CaseBasedReasoningServiceImpl implements CaseBasedReasoningService,
     NNConfig simConfig;  /** KNN configuration */
 
     @Override
-    public List<String> start(CaseDTO caseDTO) {
+    public List<String> start(CaseDescription caseDescription) {
         List<String> similarCases = new ArrayList<>();
         try {
             configure();
@@ -37,13 +37,6 @@ public class CaseBasedReasoningServiceImpl implements CaseBasedReasoningService,
             preCycle();
 
             CBRQuery query = new CBRQuery();
-
-            CaseDescription caseDescription = new CaseDescription();
-            caseDescription.setKrivicnoDelo(caseDTO.getKrivicnoDelo());
-            caseDescription.setVrednost(caseDTO.getVrednost());
-            caseDescription.setNasilno(caseDTO.getNasilno());
-            caseDescription.setUmisljaj(caseDTO.getUmisljaj());
-            caseDescription.setNepogoda(caseDTO.getNepogoda());
 
             query.setDescription(caseDescription);
 

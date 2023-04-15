@@ -1,9 +1,9 @@
 package pravnainformatika.service.interfaces;
 
-import pravnainformatika.dto.CaseDTO;
+import pravnainformatika.model.CaseDescription;
 
 import java.util.List;
 
 public interface CaseBasedReasoningService {
-    List<String> start(CaseDTO caseDTO);
+    List<String> start(CaseDescription caseDescription);
 }
