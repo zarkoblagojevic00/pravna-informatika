@@ -16,12 +16,8 @@ import pravnainformatika.dto.CaseDTO;
 import pravnainformatika.model.CaseDescription;
 import pravnainformatika.service.interfaces.CaseBasedReasoningService;
 import pravnainformatika.utils.CsvConnector;
-import pravnainformatika.utils.TabularSimilarity;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 
 @Service
 public class CaseBasedReasoningServiceImpl implements CaseBasedReasoningService, StandardCBRApplication {
