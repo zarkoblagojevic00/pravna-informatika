@@ -2,9 +2,11 @@ package pravnainformatika.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import pravnainformatika.dto.CaseDTO;
 import pravnainformatika.service.interfaces.CaseBasedReasoningService;
 
 @RestController
@@ -14,9 +16,9 @@ public class CaseBasedReasoningController {
 
     private final CaseBasedReasoningService ruleBasedReasoningService;
 
-    @GetMapping("/start_reasoning")
-    ResponseEntity<String> startReasoning() {
-        ruleBasedReasoningService.start();
+    @PostMapping("/start_reasoning")
+    ResponseEntity<String> startReasoning(@RequestBody CaseDTO caseDTO) {
+        ruleBasedReasoningService.start(caseDTO);
         return ResponseEntity.ok("Reasoning started");
     }
 

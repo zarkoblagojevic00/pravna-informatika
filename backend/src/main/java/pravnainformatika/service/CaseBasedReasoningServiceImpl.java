@@ -8,9 +8,11 @@ import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.NNConfig;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.NNScoringMethod;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.global.Average;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.Equal;
+import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.Interval;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.RetrievalResult;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.selection.SelectCases;
 import org.springframework.stereotype.Service;
+import pravnainformatika.dto.CaseDTO;
 import pravnainformatika.model.CaseDescription;
 import pravnainformatika.service.interfaces.CaseBasedReasoningService;
 import pravnainformatika.utils.CsvConnector;
@@ -26,29 +28,25 @@ public class CaseBasedReasoningServiceImpl implements CaseBasedReasoningService,
 
     Connector _connector;  /** Connector object */
     CBRCaseBase _caseBase;  /** CaseBase object */
-
     NNConfig simConfig;  /** KNN configuration */
 
     @Override
-    public void start() {
+    public void start(CaseDTO caseDTO) {
         try {
             configure();
 
             preCycle();
 
             CBRQuery query = new CBRQuery();
+
             CaseDescription caseDescription = new CaseDescription();
+            caseDescription.setKrivicnoDelo(caseDTO.getKrivicnoDelo());
+            caseDescription.setVrednost(caseDTO.getVrednost());
+            caseDescription.setNasilno(caseDTO.getNasilno());
+            caseDescription.setUmisljaj(caseDTO.getUmisljaj());
+            caseDescription.setNepogoda(caseDTO.getNepogoda());
 
-            caseDescription.setKrivicnoDelo("cl. 289 st. 3 KZ");
-            List<String> primenjeniPropisi = new ArrayList();
-            primenjeniPropisi.add("cl. 55 st. 3 tac. 15 ZOBSNP");
-            primenjeniPropisi.add("cl. 43 st. 1 ZOBSNP");
-            caseDescription.setPrimenjeniPropisi(primenjeniPropisi);
-            List<String> telesnePovrede = new ArrayList();
-            telesnePovrede.add("lake");
-            caseDescription.setTelesnePovrede(telesnePovrede);
-
-            query.setDescription( caseDescription );
+            query.setDescription(caseDescription);
 
             cycle(query);
 
@@ -68,20 +66,10 @@ public class CaseBasedReasoningServiceImpl implements CaseBasedReasoningService,
         simConfig.setDescriptionSimFunction(new Average());  // global similarity function = average
 
         simConfig.addMapping(new Attribute("krivicnoDelo", CaseDescription.class), new Equal());
-        TabularSimilarity slicnostPovreda = new TabularSimilarity(Arrays.asList(new String[] {"lake", "teske"}));
-        slicnostPovreda.setSimilarity("lake", "teske", .5);
-        simConfig.addMapping(new Attribute("telesnePovrede", CaseDescription.class), slicnostPovreda);
-        TabularSimilarity slicnostPropisa = new TabularSimilarity(Arrays.asList(new String[] {
-                "cl. 42 st. 1 ZOBSNP",
-                "cl. 43 st. 1 ZOBSNP",
-                "cl. 47 st. 1 ZOBSNP",
-                "cl. 47 st. 3 ZOBSNP",
-                "cl. 47 st. 4 ZOBSNP"}));
-        slicnostPropisa.setSimilarity("cl. 42 st. 1 ZOBSNP", "cl. 43 st. 1 ZOBSNP", .5);
-        slicnostPropisa.setSimilarity("cl. 47 st. 1 ZOBSNP", "cl. 47 st. 3 ZOBSNP", .5);
-        slicnostPropisa.setSimilarity("cl. 47 st. 3 ZOBSNP", "cl. 47 st. 4 ZOBSNP", .5);
-        slicnostPropisa.setSimilarity("cl. 47 st. 1 ZOBSNP", "cl. 47 st. 4 ZOBSNP", .5);
-        simConfig.addMapping(new Attribute("primenjeniPropisi", CaseDescription.class), slicnostPropisa);
+        simConfig.addMapping(new Attribute("nasilno", CaseDescription.class), new Equal());
+        simConfig.addMapping(new Attribute("umisljaj", CaseDescription.class), new Equal());
+        simConfig.addMapping(new Attribute("nepogoda", CaseDescription.class), new Equal());
+        simConfig.addMapping(new Attribute("vrednost", CaseDescription.class), new Interval(5000));
 
         // Equal - returns 1 if both individuals are equal, otherwise returns 0
         // Interval - returns the similarity of two number inside an interval: sim(x,y) = 1-(|x-y|/interval)
@@ -98,8 +86,8 @@ public class CaseBasedReasoningServiceImpl implements CaseBasedReasoningService,
     public CBRCaseBase preCycle() throws ExecutionException {
         _caseBase.init(_connector);
         java.util.Collection<CBRCase> cases = _caseBase.getCases();
-//		for (CBRCase c: cases)
-//			System.out.println(c.getDescription());
+		for (CBRCase c: cases)
+			System.out.println(c.getDescription());
         return _caseBase;
     }
 
