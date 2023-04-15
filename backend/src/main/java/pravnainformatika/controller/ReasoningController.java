@@ -37,4 +37,11 @@ public class ReasoningController {
         reasoningResultDTO.setSimilarCases(caseBasedReasoningService.start(caseDescription));
         return ResponseEntity.ok(reasoningResultDTO);
     }
+
+    @PostMapping("/cases/add")
+    ResponseEntity<String> addNewCase(@RequestBody CaseDTO caseDTO) {
+        CaseDescription caseDescription = modelMapper.map(caseDTO, CaseDescription.class);
+        caseBasedReasoningService.addNewCase(caseDescription);
+        return ResponseEntity.ok("New case added");
+    }
 }

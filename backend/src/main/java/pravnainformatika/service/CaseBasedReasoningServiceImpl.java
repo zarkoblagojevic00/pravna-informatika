@@ -12,13 +12,13 @@ import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.Int
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.RetrievalResult;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.selection.SelectCases;
 import org.springframework.stereotype.Service;
-import pravnainformatika.dto.CaseDTO;
 import pravnainformatika.model.CaseDescription;
 import pravnainformatika.service.interfaces.CaseBasedReasoningService;
 import pravnainformatika.utils.CsvConnector;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.LinkedList;
 import java.util.List;
 
 @Service
@@ -48,6 +48,16 @@ public class CaseBasedReasoningServiceImpl implements CaseBasedReasoningService,
         }
 
         return similarCases;
+    }
+
+    @Override
+    public void addNewCase(CaseDescription caseDescription) {
+        _connector =  new CsvConnector();
+        LinkedList<CBRCase> cases = new LinkedList<>();
+        CBRCase cbrCase = new CBRCase();
+        cbrCase.setDescription(caseDescription);
+        cases.add(cbrCase);
+        _connector.storeCases(cases);
     }
 
     @Override

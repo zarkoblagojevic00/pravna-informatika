@@ -1,9 +1,11 @@
 package pravnainformatika.utils;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
+import java.net.URISyntaxException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.LinkedList;
@@ -78,7 +80,28 @@ public class CsvConnector implements Connector {
 
     @Override
     public void storeCases(Collection<CBRCase> collection) {
-
+        try {
+            for (CBRCase cbrCase: collection) {
+                CaseDescription caseDescription = (CaseDescription) cbrCase.getDescription();
+                String s = "\n" + caseDescription.getId() + ";"
+                                + caseDescription.getSud() + ";"
+                                + caseDescription.getPoslovniBroj() + ";"
+                                + caseDescription.getSudija() + ";"
+                                + caseDescription.getTuzilac() + ";"
+                                + caseDescription.getOkrivljeni() + ";"
+                                + caseDescription.getKrivicnoDelo() + ";"
+                                + caseDescription.getVrednost() + ";"
+                                + caseDescription.getNasilno() + ";"
+                                + caseDescription.getUmisljaj() + ";"
+                                + caseDescription.getNepogoda() + ";"
+                                + caseDescription.getVrstaPresude() + ";"
+                                + caseDescription.getKazna() + ";"
+                                + String.join(",", caseDescription.getPrimenjeniPropisi());
+                Files.write(Paths.get(System.getProperty("user.dir"), "src", "main", "resources", "presude.csv"), s.getBytes(), StandardOpenOption.APPEND);
+            }
+        } catch (IOException e) {
+            //exception handling left as an exercise for the reader
+        }
     }
 
     @Override

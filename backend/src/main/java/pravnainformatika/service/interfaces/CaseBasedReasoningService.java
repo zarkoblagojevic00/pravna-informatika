@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface CaseBasedReasoningService {
     List<String> start(CaseDescription caseDescription);
+
+    void addNewCase(CaseDescription caseDescription);
 }
