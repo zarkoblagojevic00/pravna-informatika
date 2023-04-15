@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd
+                        "
+    xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17"
+    xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Baru
+                    </FRBRauthor>
+                    <FRBRdate date="2021-08-05">
+                        2021-08-05
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 190/2021
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Bar"
+                    showAs="Osnovni sud u Baru" />
+                <TLCPerson eId="spasojevic" href="/ontology/person/spasojevic"
+                    showAs="Tamara Spasojevic" />
+                <TLCPerson eId="stanisic" href="/ontology/person/stanisic" showAs="Ana Stanisic" />
+                <TLCPerson eId="ba" href="/ontology/person/ha" showAs="B.A." />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <ref href="/os"> Osnovni sud u Baru </ref>, <ref href="/judge">sudija</ref> 
+                <ref
+                    href="/spasojevic">Tamara Spasojević</ref>, uz učešće zapisničarke <ref
+                    href="/stanisic">Ane Stanišić</ref>, u krivičnom postupku protiv <ref
+                    href="/defendant">optuženog</ref> <ref
+                    href="/ba">B. A.</ref>, zbog krivičnog djela krađa iz <ref
+                    href="krivica#art_239">čl. 239 </ref> st.1 Krivičnog zakonika Crne Gore, po
+                optužnom predlogu Osnovnog državnog tužilaštva u Baru Kt.br.354/21 od
+                20.07.2021.godine, nakon održanog glavnog, javnog pretresa u prisustvu zastupnika
+                optužbe savjetnika kod Osnovnog državnog tužilaštva U Baru P. Đ. i okrivljenog, dana
+                05.08.2021.godine donio je i istog dana javno objavio P R E S U D U Okrivljeni, B.
+                A., JMB ..., od oca F. i majke B., rođene K., rođen 01.01.2002.godine u B., sa
+                adresom stanovanja u B., naselje P. V., državljani R. S., neoženjen, bez djece,
+                završio 4 razreda osnovne škole, po zanimanju radnik, lošeg imovnog stanja, osuđivan
+                presudom Osnovnog suda u Baru K.br.250/20 koja je postala pravosnažna dana
+                19.11.2020.godine, zbog krivičnog djela krađa iz čl. 239 st. 1 u vezi člana 23 st. 2
+                KZ CG, kojom mu je izrečena uslovna osuda i utvrđena kazna zatvora u trajanju od 3
+                mjeseca, uslovno na 1 godinu i presudom Osnovnog suda u Baru K.br.90/21 koja je
+                postala pravosnažna dana 28.06.2021.godine zbog krivičnog djela krađa čl.239 st.1
+                Krivičnog zakonika Crne Gore, kojom je osuđen na kaznu zatvora u trajanju od 30
+                (trideset) dana. Osnovni Sud u Baru K 190/2021 05. Avgust 2021 K r i v j e Što je,
+                Dana 28.05.2021.godine, u Baru, u ulici J. T., svjestan svog djela čije izvršenje je
+                htio znajući da je njegovo djelo zabranjeno, tuđu pokretnu stvar oduzeo drugom u
+                namjeri da njenim prisvajanjem sebi pribavi protivpravnu imovinsku korist u iznosu
+                koji prelazi 150,00 eura, na način što je došao u stambenu zgradu koja se nalazi u
+                ulici Jovana Tomaševića 3 A i ispred ulaznih vrata stana broj 18 na četvrtom spratu
+                iskoristio odsustvo oštećene B. S. i otuđio dvije crne najlonske kese u kojima su se
+                nalazile stvari i to: torbica marke "Valentino" bež boje, 19 peškira raznih boja,
+                crni kaiš marke "Zara", kaiš bijele boje nepoznate marke, kaiš crne boje marke
+                "Fionina", tri kaiša braon boje nepoznate marke, kaiš crne boje marke "Versace",
+                kaiš crvene boje nepoznate marke, kaiš roze boje nepoznate marke, kaiš crne boje
+                nepoznate marke, kaiš crvene boje nepoznate marke, 17 staklenih čaša, 6 plastičnih
+                činija, razno kućno posuđe, set od 6 čaša, tanjira i ostalog posuđa, vlasništvo
+                oštećene B. S., čime je sebi pribavio protivpravnu imovinsko korist u iznosu od
+                350,05 eura, - čime je izvršio krivično djelo krađa iz čl.239 st.1 Krivičnog
+                zakonika Crne Gore Pa sud okrivljenom primjenom čl. 2, 4, 5, 13, 15, 32, 36, 42, 48
+                i 55 Krivičnog Zakonika Crne Gore i čl.226, 229 i 374 Zakonika o krivičnom postupku,
+                u t v r đ u j e - za krivično djelo - krađa iz čl.239 st.1 Krivičnog Zakonika Crne
+                Gore kaznu zatvora u trajanju od 4 (četiri) mjeseca, - OPOZIVA SE uslovna osuda
+                izrečena presudom Osnovnog suda u Baru K.br.250/20 od 02.11.2020.godine, zbog
+                krivičnog djela - krađa iz čl.239 st.1 Krivičnog zakonika Crne Gore i kazna zatvora
+                u trajanju od 3 (tri) mjeseca uzima kao utvrdjena, </p>
+            <conclusions>
+                <p> Pa ga sud primjenom citiranih zakonskih propisa,
+                    O S U Đ U J E
+                    Na jedinstvenu kaznu zatvora u trajanju 6 (šest) mjeseci.
+                    Okrivljeni je dužan da plati troškove postupka u iznosu od 60,50 €, kao i na ime
+                    sudskog paušala u iznosu od
+                    30,00 €, u roku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudnog
+                    izvršenja.
+                </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17"
+    xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd">
+    <act id="krivica" name="Krivicni zakonik Crne Gore">
+        <meta>
+            <identification source="#szeged">
+                <FRBRWork>
+                    <FRBRthis value="/akn/krivica/!main" />
+                    <FRBRuri value="/krivica" />
+                    <FRBRdate date="2020-01-23" />
+                    <FRBRauthor href="#congress" as="#author" />
+                    <FRBRcountry value="cg" />
+                    <FRBRsubtype value="act" />
+                    <FRBRnumber value="003/20" />
+                    <FRBRname value="Krivicni zakonik Crne Gore" />
+                    <FRBRprescriptive value="true" />
+                    <FRBRauthoritative value="true" />
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRdate date="2020-01-23" />
+                    <FRBRauthor href="#sg" as="#editor" />
+                    <FRBRlanguage language="sr" />
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRdate date="2020-01-23" />
+                    <FRBRauthor href="#szeged" as="#generator" />
+                    <FRBRformat value="xml" />
+                </FRBRManifestation>
+            </identification>
+            <publication name="sg" date="2020-01-23" showAs="Službeni list Crne Gore"
+                number="003/2020" />
+            <classification source="#szeged">
+                <keyword value="krivica" showAs="Krivica" dictionary="CG" />
+            </classification>
+            <references source="#szeged">
+                <TLCOrganization eId="sl" href="/akn/rs/ontology/organization/sg"
+                    showAs="Službeni list Crne Gore" />
+            </references>
+        </meta>
+        <body>
+            <heading>
+                Krivični zakonik Crne Gore
+            </heading>
+            <chapter eId="chp_22">
+                <num>
+                    XX
+                </num>
+                <heading>
+                    KRIVIČNA DJELA PROTIV IMOVINE
+                </heading>
+                <section eId="chp_22_sec_1">
+                    <article eId="art_239">
+                        <num>
+                            Član 239
+                        </num>
+                        <paragraph eId="art_239_para_1">
+                            <heading>
+                                Krađa
+                            </heading>
+                            <point eId="art_239_para_1_point_1">
+                                <num>
+                                    1)
+                                </num>
+                                <content eId="art_239_para_1_point_1_content">
+                                    <p>
+                                        Ko tuđu pokretnu stvar oduzme drugom u namjeri da njenim
+                                        prisvajanjem sebi ili drugom pribavi protivpravnu imovinsku
+                                        korist, kazniće se novčanom kaznom ili zatvorom do tri
+                                        godine.
+                                    </p>
+                                </content>
+                            </point>
+                            <point eId="art_239_para_1_point_2">
+                                <num>
+                                    2)
+                                </num>
+                                <content eId="art_239_para_1_point_2_content">
+                                    <p> Za pokušaj djela iz <ref
+                                            href="/krivica#art_239_para_1_point_1">
+                                            stava 1
+                                        </ref>
+                                        ovog člana kazniće se. </p>
+                                </content>
+                            </point>
+                        </paragraph>
+                    </article>
+                    <article eId="art_240">
+                        <num>
+                            Član 240
+                        </num>
+                        <paragraph eId="art_240_para_1">
+                            <heading>
+                                Teška krađa
+                            </heading>
+                            <point eId="art_240_para_1_point_1">
+                                <num>
+                                    1)
+                                </num>
+                                <content eId="art_240_para_1_point_1_content">
+                                    <p> Učinilac djela krađe ( <ref href="/krivica#art_239">
+                                            član 239
+                                        </ref>
+                                        ) kazniće se zatvorom od jedne do osam godina, ako je krađa
+                                        izvršena: 1) obijanjem ili provaljivanjem zatvorenih zgrada,
+                                        soba, kasa, ormana ili drugih zatvorenih prostora ili drugim
+                                        savlađivanjem većih prepreka; 2) od strane više lica koja su
+                                        se udružila radi vršenja krađa; 3) na naročito opasan ili
+                                        naročito drzak način; 4) od strane lica koje je pri sebi
+                                        imalo kakvo oružje ili opasno oruđe radi napada ili odbrane;
+                                        5) za vrijeme požara, poplave, zemljotresa ili drugog udesa;
+                                        6) iskorišćavanjem bespomoćnosti ili drugog teškog stanja
+                                        nekog lica; </p>
+                                </content>
+                            </point>
+                            <point eId="art_240_para_1_point_2">
+                                <num>
+                                    2)
+                                </num>
+                                <content eId="art_240_para_1_point_2_content">
+                                    <p> Kaznom iz <ref href="/krivica#art_240_para_1_point_1">stava
+                                        1</ref> ovog člana kazniće se i učinilac djela krađe ako
+                                        vrijednost ukradenih stvari prelazi iznos od tri hiljade
+                                        eura ili ukradena stvar predstavlja kulturno ili prirodno
+                                        dobro. </p>
+                                </content>
+                            </point>
+                            <point eId="art_240_para_1_point_3">
+                                <num>
+                                    3)
+                                </num>
+                                <content eId="art_240_para_1_point_3_content">
+                                    <p>
+                                        Ako vrijednost ukradenih stvari prelazi iznos od trideset
+                                        hiljada eura, učinilac će se kazniti zatvorom od dvije do
+                                        deset godina.
+                                    </p>
+                                </content>
+                            </point>
+                        </paragraph>
+                    </article>
+                    <article eId="art_241">
+                        <num>
+                            Član 241
+                        </num>
+                        <paragraph eId="art_241_para_1">
+                            <heading>
+                                Razbojnička krađa
+                            </heading>
+                            <point eId="art_241_para_1_point_1">
+                                <num>
+                                    1)
+                                </num>
+                                <content eId="art_241_para_1_point_1_content">
+                                    <p>
+                                        Ko je na djelu krađe zatečen, pa u namjeri da ukradenu stvar
+                                        zadrži, upotrijebi silu protiv nekog lica ili prijetnju da
+                                        će neposredno napasti na život ili tijelo, kazniće se
+                                        zatvorom od jedne do osam godina.
+                                    </p>
+                                </content>
+                            </point>
+                            <point eId="art_241_para_1_point_2">
+                                <num>
+                                    2)
+                                </num>
+                                <content eId="art_241_para_1_point_2_content">
+                                    <p>
+                                        Ako vrijednost ukradenih stvari prelazi iznos od tri hiljade
+                                        eura, učinilac će se kazniti zatvorom od dvije do deset
+                                        godina.
+                                    </p>
+                                </content>
+                            </point>
+                            <point eId="art_241_para_1_point_3">
+                                <num>
+                                    3)
+                                </num>
+                                <content eId="art_241_para_1_point_3_content">
+                                    <p>
+                                        Ako vrijednost ukradenih stvari prelazi iznos od trideset
+                                        hiljada eura, učinilac će se kazniti zatvorom od dvije do
+                                        dvanaest godina.
+                                    </p>
+                                </content>
+                            </point>
+                            <point eId="art_241_para_1_point_4">
+                                <num>
+                                    4)
+                                </num>
+                                <content eId="art_241_para_1_point_4_content">
+                                    <p> Ako je djelo iz <ref href="/krivica#art_241_para_1_point_1">st.
+                                        1</ref> do <ref href="/krivica#art_241_para_1_point_3">3</ref>
+                                        ovog člana učinjeno od strane grupe ili je nekom licu sa
+                                        umišljajem nanesena teška tjelesna povreda, učinilac će se
+                                        kazniti zatvorom od tri do petnaest godina. </p>
+                                </content>
+                            </point>
+                            <point eId="art_241_para_1_point_5">
+                                <num>
+                                    5)
+                                </num>
+                                <content eId="art_241_para_1_point_5_content">
+                                    <p> Ako je pri izvršenju djela iz <ref
+                                            href="/krivica#art_241_para_1_point_1">st. 1</ref> do <ref
+                                            href="/krivica#art_241_para_1_point_3">3</ref> ovog
+                                        člana neko lice sa umišljajem lišeno života, učinilac će se
+                                        kazniti zatvorom najmanje deset godina ili kaznom
+                                        dugotrajnog zatvora. </p>
+                                </content>
+                            </point>
+                            <point eId="art_241_para_1_point_6">
+                                <num>
+                                    6)
+                                </num>
+                                <content eId="art_241_para_1_point_6_content">
+                                    <p> Ako vrijednost ukradenih stvari iz <ref
+                                            href="/krivica#art_241_para_1_point_1">st. 1</ref> ovog
+                                        člana ne prelazi iznos od stopedeset eura, a učinilac je
+                                        išao za tim da pribavi malu imovinsku korist, učinilac će se
+                                        kazniti zatvorom do tri godine. </p>
+                                </content>
+                            </point>
+                            <point eId="art_241_para_1_point_7">
+                                <num>
+                                    7)
+                                </num>
+                                <content eId="art_241_para_1_point_7_content">
+                                    <p> Za pokušaj djela iz <ref
+                                            href="/krivica#art_241_para_1_point_6">st. 6</ref> ovog
+                                        člana kazniće se. </p>
+                                </content>
+                            </point>
+                        </paragraph>
+                    </article>
+                </section>
+            </chapter>
+        </body>
+    </act>
+</akomaNtoso>

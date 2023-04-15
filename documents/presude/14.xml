@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Akoma_Ntoso document -->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd
+                        "
+    xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17"
+    xmlns:mods="http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Podgorici
+                    </FRBRauthor>
+                    <FRBRdate date="2021-02-17">
+                        2021-02-17
+                    </FRBRdate>
+                    <FRBRtitle>
+                        K 66/2021
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica"
+                    showAs="Osnovni sud u Podgorici" />
+                <TLCPerson eId="rabrenovic" href="/ontology/person/rabrenovic"
+                    showAs="Nada Rabrenović" />
+                <TLCPerson eId="stamatovic" href="/ontology/person/stamatovic"
+                    showAs="Larisa Mijušković-Stamatović" />
+                <TLCPerson eId="vujanovic" href="/ontology/person/vujanovic"
+                    showAs="Nenad Vujanović" />
+                <TLCPerson eId="dr" href="/ontology/person/da" showAs="D.R." />
+                <TLCRole eId="attorney" href="/ontology/role/attorney" showAs="Attorney" />
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+            </references>
+        </meta>
+        <judgmentBody>
+            <p>
+                <ref href="/os"> Osnovni sud u Podgorici </ref>, u krivičnom vijeću sastavljenom od
+                predsjednika vijeća <ref href="/judge">sudija</ref> - <ref
+                    href="/rabrenovic">Nade Rabrenović</ref> i članova vijeća - <ref
+                    href="/judge">sudija</ref> <ref
+                    href="/stamatovic">Larise Mijušković-Stamatović</ref> i <ref
+                    href="/vujanovic">Nenada Vujanovića</ref>, u krivičnom postupku osuđenog <ref
+                    href="/dr"> D. R.</ref>, odlučujući po zahtjevu za nepravo ponavljanje krivičnog
+                postupka, a nakon pribavljenog mišljenja Osnovnog državnog tužilaštva Podgorica Ktr.
+                br. 156/21 od 11.02.2021. godine, na sjednici vijeća održanoj dana 17.02.2021.
+                godine, donio je P R E S U D U Preinačavaju se samo u dijelu odluke o kazni: -
+                pravosnažna presuda Osnovnog suda u Podgorici K. br. 615/15 od 27.03.2017. godine,
+                kojom je osuđeni D. R. oglašen krivim zbog produženog krivičnog djela krađa iz <ref
+                    href="krivica#art_239"> čl. 239 </ref> st. 1 u vezi čl. 49 Krivičnog zakonika
+                Crne Gore i osuđen na kaznu zatvora u trajanju od 1 (jedne) godine, uz izrečenu
+                mjeru bezbjednosti obavezno liječenje narkomana, koja će se izvršiti u ustanovi za
+                izvršenje kazne - Zavodu za izvršenje krivičnih sankcija, s tim što mu se vrijeme
+                provedeno u ovoj ustanovi uračunava u izrečenu kaznu zatvora, a navedena mjera će
+                trajati dok postoji potreba za liječenjem, ali ne duže od tri godine, - pravosnažna
+                presuda Osnovnog suda u Kotoru K. br. 145/17/17 od 07.06.2018. godine, kojom je
+                osuđeni D. R. oglašen krivim zbog krivičnog djela teška krađa iz čl. 240 st. 1 tač.
+                1 u vezi čl. 23 Krivičnog zakonika Crne Gore i osuđen na kaznu zatvora u trajanju od
+                6 (šest) mjeseci, uz izrečenu mjeru bezbjednosti obavezno liječenje narkomana, koja
+                će se izvršiti u ustanovi za izvršenje kazne zatvora, dok se okrivljeni bude nalazio
+                na izdržavanju kazne zatvora, a nakon toga u Centru za mentalno zdravlje Doma
+                zdravlja u Danilovgradu i može trajati trajati dok postoji potreba za liječenjem,
+                ali ne duže od tri godine, pri čemu je rješenjem krivičnog vijeća Osnovnog suda u
+                Danilovgradu Kv. br. 48/20 od 21.07.2020. godine osuđeni oslobođen 5%, odnosno 9
+                (devet) dana od naprijed navedene kazne zatvora, Osnovni Sud u Podgorici Kv 66/2021
+                17. Februar 2021 - pravosnažna presuda Osnovnog suda u Podgorici K. br. 635/18 od
+                29.01.2019. godine, kojom je osuđeni D. R. oglašen krivim zbog krivičnog djela
+                razbojnička krađa iz čl. 241 st. 6 u vezi st. 1 Krivičnog zakonika Crne Gore i
+                osuđen na kaznu zatvora u trajanju od 3 (tri) mjeseca, pri čemu je rješenjem
+                krivičnog vijeća Osnovnog suda u Danilovgradu Kv. br. 48/20 od 21.07.2020. godine
+                osuđeni oslobođen 5%, odnosno 5 (pet) dana od naprijed navedene kazne zatvora, -
+                pravosnažna presuda Osnovnog suda u Podgorici K. br. 531/18 od 03.05.2019. godine,
+                kojom je osuđeni D. R. oglašen krivim zbog produženog krivičnog djela sitna krađa,
+                utaja i prevara iz čl. 246 st. 1 u vezi čl. 49 Krivičnog zakonika Crne Gore i osuđen
+                na kaznu zatvora u trajanju od 6 (šest) mjeseci, uz izrečenu mjeru bezbjednosti
+                obavezno liječenje narkomana, koja će se izvršiti u ustanovi za izvršenje kazne -
+                Zavodu za izvršenje krivičnih sankcija, s tim što mu se vrijeme provedeno u ovoj
+                ustanovi uračunava u izrečenu kaznu zatvora, a navedena mjera će trajati dok postoji
+                potreba za liječenjem, ali ne duže od tri godine, pri čemu je rješenjem krivičnog
+                vijeća Osnovnog suda u Danilovgradu Kv. br. 48/20 od 21.07.2020. godine osuđeni
+                oslobođen 5%, odnosno 9 (devet) dana od naprijed navedene kazne zatvora, </p>
+            <conclusions>
+                <p> - tako što osuđenog D. R., uzimajući ranije izrečene kazne za svako od izvršenih
+                    krivičnih djela kao utvrđene,
+                    primjenom čl. 48 i 51 Krivičnog zakonika Crne Gore, te čl. 421 st. 1 tač. 1
+                    Zakonika o krivičnom postupku
+                    O S U Đ U J E
+                    Na jedinstvenu kaznu zatvora u trajanju od 2 (dvije) godine i 2 (dva) mjeseca, u
+                    koju kaznu se osuđenom ima
+                    uračunati vrijeme provedeno na izdržavanju kazne počev od 18.06.2019. godine do
+                    18.06.2020. godine, od
+                    18.06.2020. godine do 09.12.2020. godine i od 09.12.2020. godine, pa nadalje,
+                    kao i oslobođenje od po 5% od
+                    naprijed navedenih prethodno utvrđenih kazni zatvora u trajanju od ukupno 23
+                    (dvadeset i tri) dana, po
+                    rješenju o amnestiji krivičnog vijeća Osnovnog suda u Danilovgradu Kv. br. 48/20
+                    od 21.07.2020. godine, koje
+                    je postalo pravosnažno dana 18.08.2020. godine.
+                    Na osnovu čl. 71 Krivičnog zakonika osuđenom D. R. izriče se i
+                    MJERA BEZBJEDNOSTI OBAVEZNO LIJEČENJE NARKOMANA
+                    Koja će se izvršiti u ustanovi za izvršenje kazne - Upravi za izvršenje
+                    krivičnih sankcija, s tim što mu se vrijeme
+                    provedeno u ovoj ustanovi uračunava u izrečenu kaznu zatvora, a navedena mjera
+                    će trajati dok postoji
+                    potreba za liječenjem, ali ne duže od tri godine.
+                </p>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</akomaNtoso>
