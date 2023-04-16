@@ -80,27 +80,31 @@ public class CsvConnector implements Connector {
 
     @Override
     public void storeCases(Collection<CBRCase> collection) {
-        try {
+        File f = Paths.get(System.getProperty("user.dir"), "src", "main", "resources", "presude.csv").toFile();
+        try(FileWriter fw = new FileWriter(f, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter out = new PrintWriter(bw))
+        {
             for (CBRCase cbrCase: collection) {
                 CaseDescription caseDescription = (CaseDescription) cbrCase.getDescription();
                 String s = "\n" + caseDescription.getId() + ";"
-                                + caseDescription.getSud() + ";"
-                                + caseDescription.getPoslovniBroj() + ";"
-                                + caseDescription.getSudija() + ";"
-                                + caseDescription.getTuzilac() + ";"
-                                + caseDescription.getOkrivljeni() + ";"
-                                + caseDescription.getKrivicnoDelo() + ";"
-                                + caseDescription.getVrednost() + ";"
-                                + caseDescription.getNasilno() + ";"
-                                + caseDescription.getUmisljaj() + ";"
-                                + caseDescription.getNepogoda() + ";"
-                                + caseDescription.getVrstaPresude() + ";"
-                                + caseDescription.getKazna() + ";"
-                                + String.join(",", caseDescription.getPrimenjeniPropisi());
-                Files.write(Paths.get(System.getProperty("user.dir"), "src", "main", "resources", "presude.csv"), s.getBytes(), StandardOpenOption.APPEND);
+                        + caseDescription.getSud() + ";"
+                        + caseDescription.getPoslovniBroj() + ";"
+                        + caseDescription.getSudija() + ";"
+                        + caseDescription.getTuzilac() + ";"
+                        + caseDescription.getOkrivljeni() + ";"
+                        + caseDescription.getKrivicnoDelo() + ";"
+                        + caseDescription.getVrednost() + ";"
+                        + caseDescription.getNasilno() + ";"
+                        + caseDescription.getUmisljaj() + ";"
+                        + caseDescription.getNepogoda() + ";"
+                        + caseDescription.getVrstaPresude() + ";"
+                        + caseDescription.getKazna() + ";"
+                        + String.join(",", caseDescription.getPrimenjeniPropisi());
+                out.print(s);
             }
         } catch (IOException e) {
-            //exception handling left as an exercise for the reader
+            e.printStackTrace();
         }
     }
 
