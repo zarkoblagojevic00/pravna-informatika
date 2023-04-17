@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #303841;
+  padding: 1rem;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  padding: 0 0.25em;
+  margin-right: 1rem;
+}
+
+.navbar-link {
+  font-weight: 500;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.navbar-link.active {
+  color: #FFA500;
+  cursor: default;
+}
+
+.navbar-link:hover {
+  color: #FFA500;
+}
