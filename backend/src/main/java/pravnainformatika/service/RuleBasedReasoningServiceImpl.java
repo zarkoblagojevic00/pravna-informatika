@@ -17,20 +17,18 @@ public class RuleBasedReasoningServiceImpl implements RuleBasedReasoningService 
     @Override
     public void start() {
         Path scriptPath = Paths.get(drDevicePath.toString(), "start.bat");
-        ProcessBuilder pb = new ProcessBuilder(scriptPath.toString());
-        pb.directory(drDevicePath.toFile());
-        try {
-            runProcess(pb);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        runScriptFromDirectory(scriptPath, drDevicePath);
     }
 
     @Override
     public void clean() {
         Path scriptPath = Paths.get(drDevicePath.toString(), "clean.bat");
+        runScriptFromDirectory(scriptPath, drDevicePath);
+    }
+
+    public static void runScriptFromDirectory(Path scriptPath, Path directoryPath) {
         ProcessBuilder pb = new ProcessBuilder(scriptPath.toString());
-        pb.directory(drDevicePath.toFile());
+        pb.directory(directoryPath.toFile());
         try {
             runProcess(pb);
         } catch (IOException e) {
