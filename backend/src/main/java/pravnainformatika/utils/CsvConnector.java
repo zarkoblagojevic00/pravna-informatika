@@ -24,7 +24,7 @@ public class CsvConnector implements Connector {
         LinkedList<CBRCase> cases = new LinkedList<>();
 
         try {
-            InputStream inputStream = getClass().getResourceAsStream("/presude.csv");
+            InputStream inputStream = getClass().getResourceAsStream("/documents/presude/presude.csv");
             if (inputStream == null)
                 throw new Exception("Error opening file");
             BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
@@ -80,7 +80,7 @@ public class CsvConnector implements Connector {
 
     @Override
     public void storeCases(Collection<CBRCase> collection) {
-        File f = Paths.get(System.getProperty("user.dir"), "src", "main", "resources", "presude.csv").toFile();
+        File f = Paths.get(System.getProperty("user.dir"), "src", "main", "resources", "documents", "presude", "presude.csv").toFile();
         try(FileWriter fw = new FileWriter(f, true);
             BufferedWriter bw = new BufferedWriter(fw);
             PrintWriter out = new PrintWriter(bw))
