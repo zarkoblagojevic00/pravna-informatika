@@ -15,6 +15,14 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.StringWriter;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVRecord;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 @RestController
 @RequiredArgsConstructor
 public class DocumentsController {
@@ -71,6 +79,28 @@ public class DocumentsController {
                 .contentType(MediaType.APPLICATION_PDF)
                 .body(Files.readAllBytes(Path.of(resourceUrl.toURI())));
     }
+
+    @GetMapping("/documents/features")
+    public ResponseEntity<?> features() throws IOException, URISyntaxException {
+        ClassLoader classLoader = DocumentsController.class.getClassLoader();
+        var resourceUrl = classLoader.getResource("documents/presude/presude_extended.csv");
+
+        CSVParser parser = CSVFormat.DEFAULT.withHeader().withDelimiter(';').parse(new FileReader(Path.of(resourceUrl.toURI()).toFile()));
+
+        StringWriter stringWriter = new StringWriter();
+        ObjectMapper mapper = new ObjectMapper();
+
+        for (CSVRecord record : parser) {
+            String json = mapper.writeValueAsString(record.toMap());
+            stringWriter.write(json + "\n");
+        }
+
+        String jsonString = stringWriter.toString();
+
+        return ResponseEntity.ok().body(jsonString);
+    }
+
+
 
 
 
