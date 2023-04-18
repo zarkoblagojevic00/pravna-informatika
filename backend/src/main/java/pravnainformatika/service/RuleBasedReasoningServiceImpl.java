@@ -1,11 +1,14 @@
 package pravnainformatika.service;
 
 import org.springframework.stereotype.Service;
+import org.w3c.dom.*;
+import pravnainformatika.model.CaseDescription;
 import pravnainformatika.service.interfaces.RuleBasedReasoningService;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -15,9 +18,11 @@ public class RuleBasedReasoningServiceImpl implements RuleBasedReasoningService 
     private final Path drDevicePath = Paths.get(System.getProperty("user.dir"), "src", "main", "resources", "dr-device-files");
 
     @Override
-    public void start() {
+    public String start(CaseDescription caseDescription) {
+        writeFacts(caseDescription);
         Path scriptPath = Paths.get(drDevicePath.toString(), "start.bat");
         runScriptFromDirectory(scriptPath, drDevicePath);
+        return readExport();
     }
 
     @Override
@@ -44,5 +49,63 @@ public class RuleBasedReasoningServiceImpl implements RuleBasedReasoningService 
         while ((line = reader.readLine()) != null) {
             System.out.println(line);
         }
+    }
+
+    private void writeFacts(CaseDescription caseDescription) {
+        File f = Paths.get(drDevicePath.toString(), "facts.rdf").toFile();
+        try(FileWriter fw = new FileWriter(f);
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter out = new PrintWriter(bw))
+        {
+            String s = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
+                    "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n" +
+                    "        xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n" +
+                    "        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n" +
+                    "        xmlns:lc=\"http://informatika.ftn.uns.ac.rs/legal-case.rdf#\">\n" +
+                    "    <lc:case rdf:about=\"http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01\">\n" +
+                    "        <lc:name>case 01</lc:name>\n" +
+                    "        <lc:defendant>" + caseDescription.getOkrivljeni() + "</lc:defendant>\n" +
+                    "        <lc:value rdf:datatype=\"http://www.w3.org/2001/XMLSchema#integer\">" + caseDescription.getVrednost() + "</lc:value>\n" +
+                    "        <lc:violent>" + transformString(caseDescription.getNasilno()) + "</lc:violent>\n" +
+                    "        <lc:premeditation>" + transformString(caseDescription.getUmisljaj()) + "</lc:premeditation>\n" +
+                    "        <lc:disaster>" + transformString(caseDescription.getNepogoda()) + "</lc:disaster>\n" +
+                    "    </lc:case>\n" +
+                    "</rdf:RDF>";
+            out.print(s);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private String transformString(String s) {
+        return s.equals("da") ? "yes" : "no";
+    }
+
+    private String readExport() {
+        StringBuilder ret = new StringBuilder();
+        File f = Paths.get(drDevicePath.toString(), "export.rdf").toFile();
+        try {
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            factory.setNamespaceAware(true);
+            DocumentBuilder documentBuilder = factory.newDocumentBuilder();
+            Document document = documentBuilder.parse(f);
+            Node n = document.getChildNodes().item(1);
+            NodeList nodeList = n.getChildNodes();
+
+            for (int i = 0; i < nodeList.getLength(); ++i) {
+                Node node = nodeList.item(i);
+                if (node.getNodeName().contains("export") && node.getTextContent().contains("defeasibly-proven-positive")) {
+                    String nodeName = node.getNodeName().split(":")[1];
+                    String childNodeName = node.getChildNodes().item(1).getNodeName().split(":")[1];
+                    String childNodeText = node.getChildNodes().item(1).getTextContent();
+                    ret.append(nodeName).append(": ").append(childNodeName).append(" = ").append(childNodeText).append(", ");
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        ret.setLength(ret.length() - 2);
+        return ret.toString();
     }
 }

@@ -18,24 +18,10 @@ public class ReasoningController {
     private final CaseBasedReasoningService caseBasedReasoningService;
     private final ModelMapper modelMapper;
 
-    @GetMapping("/rules/start_reasoning")
-    ResponseEntity<String> startReasoning() {
-        ruleBasedReasoningService.start();
-        return ResponseEntity.ok("Reasoning started");
-    }
-
     @GetMapping("rules/clean")
     ResponseEntity<String> clean() {
         ruleBasedReasoningService.clean();
         return ResponseEntity.ok("Reasoning files cleaned");
-    }
-
-    @PostMapping("/start_reasoning")
-    ResponseEntity<ReasoningResultDTO> startReasoning(@RequestBody CaseDTO caseDTO) {
-        ReasoningResultDTO reasoningResultDTO = new ReasoningResultDTO();
-        CaseDescription caseDescription = modelMapper.map(caseDTO, CaseDescription.class);
-        reasoningResultDTO.setSimilarCases(caseBasedReasoningService.start(caseDescription));
-        return ResponseEntity.ok(reasoningResultDTO);
     }
 
     @PostMapping("/cases/add")
@@ -43,5 +29,15 @@ public class ReasoningController {
         CaseDescription caseDescription = modelMapper.map(caseDTO, CaseDescription.class);
         caseBasedReasoningService.addNewCase(caseDescription);
         return ResponseEntity.ok("New case added");
+    }
+
+    @PostMapping("/start_reasoning")
+    ResponseEntity<ReasoningResultDTO> startReasoning(@RequestBody CaseDTO caseDTO) {
+        ReasoningResultDTO reasoningResultDTO = new ReasoningResultDTO();
+        CaseDescription caseDescription = modelMapper.map(caseDTO, CaseDescription.class);
+        reasoningResultDTO.setSimilarCases(caseBasedReasoningService.start(caseDescription));
+        reasoningResultDTO.setAppliedProvisions(ruleBasedReasoningService.start(caseDescription));
+        ruleBasedReasoningService.clean();
+        return ResponseEntity.ok(reasoningResultDTO);
     }
 }
