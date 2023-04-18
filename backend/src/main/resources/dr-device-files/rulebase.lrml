@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ xsd-compact/lrml-compact.xsd" xmlns:ruleml="http://ruleml.org/spec">
 	<lrml:Statements>
+		<lrml:PrescriptiveStatement key="ps_cl239">
+			<ruleml:Rule key=":rule_ps_cl239" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:stolenFunds"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="stolenFunds">Value</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Expr>
+								<ruleml:Fun>&lt;=</ruleml:Fun>
+								<ruleml:Var>Value</ruleml:Var>
+								<ruleml:Ind>3000</ruleml:Ind>
+							</ruleml:Expr>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>is_theft</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
 		<lrml:PrescriptiveStatement key="ps_cl240_lv1_1">
 			<ruleml:Rule key=":rule_cl240_lv1_1" closure="universal" strength="defeasible">
 				<ruleml:if>
@@ -84,6 +110,26 @@
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="ps_cl240_vs_cl239">
+			<ruleml:Rule key=":rule_cl240_vs_cl239" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel>is_aggravated_theft_lv1</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Negation>
+						<ruleml:Atom>
+							<ruleml:Rel>is_theft</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:Negation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
 		<lrml:PrescriptiveStatement key="ps_cl240_lv2">
 			<ruleml:Rule key=":rule_cl240_lv2" closure="universal" strength="defeasible">
 				<ruleml:if>
@@ -130,49 +176,19 @@
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-<!--		<lrml:PrescriptiveStatement key="ps_cl240_ok">-->
-<!--			<ruleml:Rule key=":rule_cl240_ok" closure="universal" strength="defeasible">-->
-<!--				<ruleml:if>-->
-<!--					<ruleml:And>-->
-<!--						<ruleml:Atom>-->
-<!--							<ruleml:Rel iri="lc:stolenFunds"/>-->
-<!--							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>-->
-<!--							<ruleml:Var type="stolenFunds">Value</ruleml:Var>-->
-<!--						</ruleml:Atom>-->
-<!--						<ruleml:Atom>-->
-<!--							<ruleml:Expr>-->
-<!--								<ruleml:Fun>&lt;</ruleml:Fun>-->
-<!--								<ruleml:Var>Value</ruleml:Var>-->
-<!--								<ruleml:Ind>3000</ruleml:Ind>-->
-<!--							</ruleml:Expr>-->
-<!--						</ruleml:Atom>-->
-<!--						<ruleml:Atom>-->
-<!--							<ruleml:Rel iri="lc:violent"/>-->
-<!--							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>-->
-<!--							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>-->
-<!--						</ruleml:Atom>-->
-<!--						<ruleml:Atom>-->
-<!--							<ruleml:Rel iri="lc:premeditation"/>-->
-<!--							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>-->
-<!--							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>-->
-<!--						</ruleml:Atom>-->
-<!--						<ruleml:Atom>-->
-<!--							<ruleml:Rel iri="lc:disaster"/>-->
-<!--							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>-->
-<!--							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>-->
-<!--						</ruleml:Atom>-->
-<!--					</ruleml:And>-->
-<!--				</ruleml:if>-->
-<!--				<ruleml:then>-->
-<!--					<ruleml:Atom>-->
-<!--						<ruleml:Rel>is_aggravated_theft_lv1</ruleml:Rel>-->
-<!--						<ruleml:Var type=":defendant">Defendant</ruleml:Var>-->
-<!--					</ruleml:Atom>-->
-<!--				</ruleml:then>-->
-<!--			</ruleml:Rule>-->
-<!--		</lrml:PrescriptiveStatement>-->
 
 		<lrml:PenaltyStatement key="pen1">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+					<ruleml:Atom>
+						<ruleml:Rel iri=":max_imprisonment"/>
+						<ruleml:Var>Years</ruleml:Var>
+						<ruleml:Ind>3</ruleml:Ind>
+					</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="pen2">
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
@@ -183,7 +199,7 @@
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen2">
+		<lrml:PenaltyStatement key="pen3">
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
@@ -194,7 +210,7 @@
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen3">
+		<lrml:PenaltyStatement key="pen4">
 			<lrml:SuborderList>
 				<lrml:Obligation>
 					<ruleml:Atom>
@@ -205,7 +221,7 @@
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen4">
+		<lrml:PenaltyStatement key="pen5">
 			<lrml:SuborderList>
 				<lrml:Obligation>
 					<ruleml:Atom>
@@ -220,7 +236,7 @@
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen1"/>
-				<lrml:toPrescriptiveStatement keyref="#ps_cl240_lv1_1"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_cl239"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
@@ -231,8 +247,8 @@
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen1"/>
-				<lrml:toPrescriptiveStatement keyref="#ps_cl240_lv1_2"/>
+				<lrml:appliesPenalty keyref="#pen3"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_cl240_lv1_1"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
@@ -243,8 +259,8 @@
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen1"/>
-				<lrml:toPrescriptiveStatement keyref="#ps_cl240_lv1_3"/>
+				<lrml:appliesPenalty keyref="#pen3"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_cl240_lv1_2"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
@@ -255,8 +271,8 @@
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen1"/>
-				<lrml:toPrescriptiveStatement keyref="#ps_cl240_lv1_4"/>
+				<lrml:appliesPenalty keyref="#pen3"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_cl240_lv1_3"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
@@ -268,7 +284,7 @@
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen3"/>
-				<lrml:toPrescriptiveStatement keyref="#ps_cl240_lv2"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_cl240_lv1_4"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
@@ -277,15 +293,12 @@
 				<lrml:toPrescriptiveStatement keyref="#ps_cl240_lv2"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen5"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_cl240_lv2"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
 
-<!--		<lrml:OverrideStatement>-->
-<!--			<lrml:Override under="#ps_cl240_lv1" over="#ps_cl240_lv2"/>-->
-<!--		</lrml:OverrideStatement>-->
-<!--		<lrml:OverrideStatement>-->
-<!--			<lrml:Override under="#ps_cl240_lv2" over="#ps_cl240_ok"/>-->
-<!--		</lrml:OverrideStatement>-->
-<!--		<lrml:OverrideStatement>-->
-<!--			<lrml:Override under="#ps_cl240_lv3" over="#ps_cl240_ok"/>-->
-<!--		</lrml:OverrideStatement>-->
 	</lrml:Statements>
 </lrml:LegalRuleML>
