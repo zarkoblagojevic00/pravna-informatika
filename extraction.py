@@ -52,6 +52,15 @@ def extract(text):
             optuzeni = ''.join(_n_words_after_word(term.split(' '), 'optuž', 2))
             return sud, sudija, zapisnicar, optuzeni
         
-for presuda in presude:
-    print(extract(presuda))
+def main():
+    with open('features.csv', 'w', encoding="utf-8") as f:
+        f.write('sudija, zapisnicar, okrivljeni, \n')
+        for presuda in presude:
+            f.write(','.join(extract(presuda)))
+            f.write('\n')
+
+
+if __name__ == "__main__":
+    main()
+    
 
