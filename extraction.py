@@ -54,7 +54,7 @@ def extract(text):
         
 def main():
     with open('features.csv', 'w', encoding="utf-8") as f:
-        f.write('sudija, zapisnicar, okrivljeni, \n')
+        f.write('sud, sudija, zapisnicar, okrivljeni, \n')
         for presuda in presude:
             f.write(','.join(extract(presuda)))
             f.write('\n')

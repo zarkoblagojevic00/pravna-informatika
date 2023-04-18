@@ -10,13 +10,13 @@
             <identification source="#court">
                 <FRBRWork>
                     <FRBRauthor>
-                        Osnovni Sud u Podgorici
+                        Osnovni Sud u Nikšiću
                     </FRBRauthor>
-                    <FRBRdate date="2022-03-29">
-                        2022-03-29
+                    <FRBRdate date="2021-10-01">
+                        2021-10-01
                     </FRBRdate>
                     <FRBRtitle>
-                        K 51/2022
+                        K 49/2021
                     </FRBRtitle>
                     <FRBRcountry>
                         CG
@@ -24,11 +24,11 @@
                 </FRBRWork>
             </identification>
             <references>
-                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica"
-                    showAs="Osnovni sud u Podgorici" />
-                <TLCPerson eId="cetkovic" href="/ontology/person/cetkovic" showAs="Rade Ćetković" />
-                <TLCPerson eId="kraja" href="/ontology/person/kraja" showAs="Edina Kraja" />
-                <TLCPerson eId="ir" href="/ontology/person/ir" showAs="I.R." />
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Nikšić"
+                    showAs="Osnovni sud u Nikšiću" />
+                <TLCPerson eId="musikic" href="/ontology/person/musikic" showAs="Sava Mušikić" />
+                <TLCPerson eId="cirakovic" href="/ontology/person/cirakovic"
+                    showAs="Petar Ćiraković" />
                 <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
                 <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
                 <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
@@ -36,116 +36,111 @@
         </meta>
         <judgmentBody>
             <p>
-                <ref href="/os"> Osnovni sud u Podgorici </ref>, <ref href="/judge">sudija</ref> 
-                <ref
-                    href="/cetkovic">Rade Ćetković</ref>, uz učešće zapisničarke <ref href="/kraja">Edine
-                Kraje</ref>, u krivičnom postupku protiv optuženog <ref href="/ir">I. R.</ref>, zbog
-                produženog krivičnog djela falsifikovanje i zloupotreba kreditnih kartica i kartica
-                za bezgotovinsko plaćanje iz čl. 260 st. 2 u vezi sa st. 1 i čl. 49 Krivičnog
-                zakonika Crne Gore u sticaju sa produženim krivičnim djelom teška krađa iz <ref
-                    href="/krivica#art_240_para_1_point_1">čl. 240 st. 1 tač. 1 i </ref>
-                <ref
-                    href="/krivica#art_240_para_1_point_3"> 3</ref> i st. 2 u vezi sa čl. 49
-                Krivičnog Zakonika Crne Gore, nakon pravosnažnosti rješenja o usvajanju sporazuma o
-                priznanju krivice, dana 29.03.2022. godine, donio je PRESUDU Optuženi: I. R., JMB
-                ..., od oca R. i majke N., rođene V., rođen ... godine u Pg, sa prebivalištem u Pg -
-                B. bb, državljanin Crne Gore, razumije crnogorski jezik, koji je i njegov jezik,
-                konobar, razveden, bez djece, pismen, završio srednju školu, lošeg imovnog stanja,
-                osuđivan, presudama Osnovnog suda u Podgorici K. br. 208/10 od 05.04.2011. godine
-                zbog produženog krivičnog djela teška kradja iz čl. 240 st. 1 tač. 2 u vezi sa čl.
-                49 Krivičnog zakonika (6 mjeseci zatvora), K. br. 784/13 od 18.02.2014.godine zbog
-                krivičnog djela kradja iz čl. 239 st. 1 Krivičnog zakonika Crne Gore (5 mjeseci
-                zatvora), K. br. 837/13 od 04.06.2014. godine zbog krivičnog djela kradja iz čl. 239
-                st. 1 Krivičnog zakonika Crne Gore (4 mjeseca zatvora), Kv. br. 508/15 od
-                10.11.2015. godine kojom su u dijelu odluke o kazni preinačene presude ovog suda K.
-                br. 77/15 od 25.06.2015. godine i K. br. 299/14 od 26.09.2014. godine zbog krivičnog
-                djela teška kradja iz <ref href="krivica#art_240">
-                    čl. 240
-                </ref> st. 1 tač. 1 Krivičnog
-                zakonika Crne Gore u sticaju sa produženim krivičnim djelom teška krađa u pokušaju
-                iz čl. 240 st. 1 tač. 1 u vezi sa čl. 20 st. 1 Krivičnog zakonika Crne Gore (1
-                godina i 11 mjeseci zatvora), K. br. 376/17 od 21.06.2017. godine zbog produženog
-                krivičnog djela falsifikovanje i zloupotreba kreditnih kartica i kartica za
-                bezgotovinsko plaćanje iz čl. 260 st. 2 u vezi sa st. 1 u vezi čl. 49 Krivičnog
-                zakonika Crne Gore (1 godina i 10 mjeseci zatvora), K. br. 720/19 od 12.03.2020.
-                godine zbog produženog krivičnog djela teška kradja iz čl. 240 st. 1 tač. 1 u vezi
-                sa čl. 49 Krivičnog zakonika Crne Gore (1 godina i 8 mjeseci zatvora), protiv kojeg
-                se ne vodi postupak za drugo krivično djelo, u pritvoru po rješenju sudije za
-                istragu Kri. br. 651/21 od 09.12.2021. godine, koji se računa od 06.12.2021. godine
-                sa početkom u 16.30 časova. Kriv je Što je: I Dana 1. decembra 2021. godine, na
-                teritoriji Glavnog grada Podgorica, svjestan svog djela čije je izvršenje htio,
-                znajući da je isto zabranjeno, u više navrata tuđe kreditne kartice, koje je
-                neovlašćeno pribavio, upotrijebio, na način što je dvije platne kartice N. banke
-                vlasništvo oštećenih I. C. i V. C. pronašao u novčaniku koji je oštećena V. C.
-                prethodnog dana izgubila, nakon čega je platnu karticu oštećenog I. C. upotrijebio
-                četiri puta i to: u 13.49 časova u prodajnom objektu "I. Z. 1" za kupovinu artikala
-                u iznosu od 25.13 eura, u 16.00 časova na bankomatu N. Banke koji se nalazi pored
-                marketa, u namjeri da podigne novac, u čemu nije uspio zbog pogrešnog unosa pin
-                koda, a zatim u butiku "S. f." koji se nalazi u Z., u 16.15 časova i u 16.16 časova,
-                u namjeri da plati robu u vrijednosti od 56,00 eura, u čemu nije uspio, te karticu
-                oštećene V. C. upotrijebio četiri puta i to: u 14.10 časova u marketu "I. Z. 1" gdje
-                je pokušao da plati artikle, u čemu nije uspio, jer na računu nije bilo novca, u
-                15.56 časova na bankomatu N. Banke koji se nalazi pored marketa u namjeri da podigne
-                novac, u čemu nije uspio, te u dva navrata u butiku "S. f." u 16.13 časova i u 16.14
-                časova, u namjeri da plati robu u vrijednosti od 56,00 u čemu nije uspio, na koji
-                način je pribavio sebi protivpravnu imovinsku korist u iznosu od 25,13 eura, te u
-                istom iznosu pričinio štetu oštećenom I. C., - čime je izvršio produženo krivično
-                djelo falsifikovanje i zloupotreba kreditnih kartica i kartica za bezgotovinsko
-                plaćanje iz člana 260 stav 2 u vezi sa stavom 1 i članom 49 Krivičnog zakonika Crne
-                Gore. II 1. Dana 2. decembra 2021. godine, oko 04.00 časa, u Ulici M. R. .., Glavni
-                grad Pg, svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno,
-                obijanjem i na naročito drzak način, tuđe pokretne stvari, čija vrijednost prelazi
-                iznos od 3.000,00 eura, oduzeo drugom, u namjeri da njihovim prisvajanjem sebi
-                pribavi protivpravnu imovinsku korist, na način što je preskočio ogradu i ušao u
-                dvorište stambene zgrade, te prišao vratima od terase stana vlasništvo M. R. koji se
-                nalazi u prizemlju, koja je upotrebom fizičke snage otvorio, nakon čega je ušao u
-                unutrašnjost stana, gdje je najprije u dnevnom boravku iz staklene vitrine oduzeo i
-                prisvojio kutiju u kojoj su se nalazila dva prstena od kojih je jedan bio zlatni sa
-                kamenjem vrijednosti 1,238.00 eura, a drugi od platine sa kamenom vrijednosti
-                3,850,00 eura i sat marke "Tag Hauer", vrijednosti 1,021,50 eura, nakon čega je iz
-                trpezarije oduzeo i prisvojio dva mobilna telefona od kojih je jedan marke "Samsung
-                A21" vrijednosti 172,60 eura i drugi marke "Samsung Note 10+" vrijednosti 516,60
-                eura, kao i novac u iznosu od 30,00 eura, sve vlasništvo oštećenog S. R., da bi
-                potom otišao do spavaće sobe, odakle je uzeo lap top koji se nalazio na stolu odmah
-                pored kreveta gdje je u tom trenutku spavao brat oštećenog S. R. - I. R., koji lap
-                top je zajedno sa garderobom i flašama alkoholnog pića, koje je pronašao u
-                trpezariji, stavio u dvije torbe, u namjeri da ih oduzme i prisvoji, u čemu je bio
-                spriječen nailaskom I. R., zbog čega je pobjegao u nepoznatom pravcu, na koji način
-                je pribavio sebi protivpravnu imovinsku korist u iznosu od 6.828,70 eura, 2. Dana 2.
-                decembra 2021. godine, oko 18.00 časova, u Ulici II crnogorskog bataljona broj 38,
-                Glavni grad Pg, svjestan svog djela čije je izvršenje htio, znajući da je isto
-                zabranjeno, tuđu pokretnu stvar oduzeo drugom, u namjeri da njenim prisvajanjem sebi
-                pribavi protivpravnu imovinsku korist, na način što je ušao u dvorište kuće
-                vlasništvo oštećenog Z. L., odakle je oduzeo i prisvojio eloksirana vrata
-                vrijednosti 1.002,00 eura koja su bila prislonjena uz zid od ograde dvorišta, nakon
-                čega je ista utovario na putničko vozilo marke "Mercedes" registarskih oznaka PG
-                ..., koja su bila parkirana u neposrednoj blizini i u kojem su se nalazili D. Č. i
-                D. T., kojima je navedena vrata prethodno ponudio da proda, - čime je izvršio
-                produženo krivično djelo teška krađa iz člana 240 stav 1 tačka 1 i 3 i stav 2 u vezi
-                sa članom 49 Krivičnog zakonika Crne Gore. Pa sud optuženom zbog navedenih krivičnih
-                djela primjenom čl. 4 st. 2, čl. 32, čl. 36, čl. 42 st. 1 i čl. 48 st. 1 Krivičnog
-                zakonika Crne Gore predhodno utvrđuje: - za produženo krivično djelo falsifikovanje
-                i zloupotreba kreditnih kartica i kartica za bezgotovinsko plaćanje iz člana 260
-                stav 2 u vezi sa stavom 1 i članom 49 Krivičnog zakonika Crne Gore kaznu zatvora u
-                trajanju od 1 (jedne) godine i 5 (mjeseci); - za produženo krivično djelo teška
-                krađa iz <ref href="krivica#art_240">člana 240</ref> stav 1 tačka 1 i 3 i stav 2 u
-                vezi sa članom 49 Krivičnog zakonika Crne Gore kaznu zatvora u trajanju od 2 (dvije)
-                godine i 4 (mjeseca). </p>
+                <ref href="/os">OSNOVNI SUD U NIKŠIĆU </ref>, prvostepeni krivični, <ref
+                    href="/judge">sudija</ref> <ref href="/musikic">Sava Mušikić</ref>, u krivičnom
+                predmetu protiv <ref href="defendant">okrivljenog</ref>
+                <ref href="cirakovic">Ćiraković
+                Petra</ref> iz Nikšića, zbog izvršenja krivičnog djela krađa iz <ref
+                    href="/krivica#art_239_para_1">čl. 239 st. 1 </ref> Krivičnog zakonika Crne Gore
+                (KZ CG), po optužnom predlogu Osnovnog državnog tužilaštva u Nikšiću, Kt.br. 38/21
+                od 16.02.2021. godine, nakon završenog glavnog i javnog pretresa od 01.10.2021.
+                godine u prisustvu državnog tužioca Lopičić Rajka, okrivljenog i njegovog branioca,
+                advokata Stojanović Dragiše iz Nikšića, istog dana je donio a dana 04.10.2021.
+                godine javno objavio P R E S U D U Okrivljeni: PETAR ĆIRAKOVIĆ, JMBG 0407983260015,
+                od oca Dragoljuba i majke Jovanke, rođ. Vujović, rođen dana 04.07.1983. godine u
+                Nikšiću, sa prebivalištem u Nikšiću, Kočani bb, državljanin Crne Gore, razveden,
+                otac jednog djeteta, pismen, završio srednju školu, nezaposlen, lošeg imovnog
+                stanja, osuđivan presudama Osnovnog suda u Nikšiću K.br. 19/19 od 21.03.2019.
+                godine, zbog krivičnog djela krađa iz čl. 239 st. 1 KZ CGna kaznu zatvora u trajanju
+                od 1 godine, K.br. 104/14 od 19.02.2015. godine, zbog krivičnog djela razbojništvo
+                iz čl. 242 st. 1 KZ CG - na kaznu zatvora u trajanju od 2 godine, Višeg suda u
+                Podgorici K.br. 44/13 od 07.04.2015. godine, zbog krivičnog djela ubistvo u pokušaju
+                iz čl. 143 u vezi čl. 20 i 23 st. 2 KZ CG - na kaznu zatvora u trajanju od 2 godine,
+                Osnovnog suda u Kotoru K.br. 24/19/19 od 30.04.2019. godine, zbog krivičnog djela
+                krađa iz čl. 239 st. 1 KZ CG- na kaznu zatvora u trajanju od 2 godine, Osnovnog suda
+                u Podgorici Kv.br. 777/11 od 15.11.2011. godine, zbog krivičnog djela prevara iz čl.
+                244 st. 3 u vezi st. 1 u vezi čl. 20 KZ CG - na jedinstveu kaznu zatvora u trajanju
+                od 1 godine i 11 mjeseci, Osnovnog suda u Podgorici K.br. 29/11 od 28.09.2011.
+                godine, zbog krivičnog djela razbojništvo iz čl. 240 st. 1 u vezi čl. 20 i čl. 23 KZ
+                CG - na kaznu zatvora u trajanju od 1 godine, Osnovnog suda u Podgorici K.br.
+                1047/10 od 03.06.2011. godine, zbog krivičnog djela prevara iz čl. 244 st. 3 u vezi
+                st. 1 u vezi čl. 20 KZ CG - na kaznu zatvora u trajanju od 1 godine, Osnovnog suda u
+                Podgorici K.br. 09/985 od 13.10.2010. godine, zbog krivičnog djela prevara iz čl.
+                244 st. 3 u vezi st. 1 u vezi čl. 20 KZ CG - na kaznu zatvora u trajanju od 1
+                godine, Osnovnog suda u Kotoru K.br. 394/07 od 19.03.2009. godine, zbog produženog
+                krivičnog djela kradja iz čl. 239 st. 1 u vezi čl. 49 KZ CG - na kaznu zatvora u
+                trajanju od 2 mjeseca, Osnovnog suda u Baru K.br. 431/07 od 21.10.2008. godine, zbog
+                produženog krivičnog djela kradja iz čl. 239 st. 1 u vezi čl. 49 KZ CG - na kaznu
+                zatvora u trajanju od 60 dana, Osnovnog Osnovni Sud u Nikšiću K 49/2021 01. Oktobar
+                2021 suda u Nikšiću K.br. 546/08 od 08.12.2008. godine, zbog krivičnog djela sitna
+                kradja, utaja i prevara iz čl. 246 st. 1 KZ CG - na kaznu zatvora u trajanju od 60
+                dana, Osnovnog suda u Nikšiću K.br. 551/07 od 16.04.2009. godine, zbog produženog
+                krivičnog djela sitna kradja, utaja i prevara iz čl. 246 st. 1 u vezi st. 2 u vezi
+                čl. 49 KZ CG - na kaznu zatvora u trajanju od 4 mjeseca, Osnovnog suda u Nikšiću
+                K.br. 747/08 od 06.02.2009. godine, zbog krivičnog djela kradja iz čl. 239 st. 1 KZ
+                CG - na kaznu zatvora u trajanju od 6 mjeseci, K.br. 81/03 od 29.09.2003. godine,
+                kojom je osuđen na kaznu zatvora u trajanju od 30 dana, zbog krivičnog djela prevara
+                iz čl. 149 st. 1 KZ RCG, K.br. 218/04 od 15.11.2004. godine, kojom je osuđen na
+                kaznu zatvora u trajanju od 30 dana, zbog krivičnog djela sitna krađa, utaja i
+                prevara iz čl. 246 st. 1 KZ CG, K.br. 273/06 od 12.05.2006. godine, kojom je osuđen
+                na kaznu zatvora u trajanju od 30 dana, zbog krivičnog djela sitna krađa, utaja i
+                prevara iz čl. 246 st. 1 KZ CG, K.br. 474/06 od 17.10.2006. godine, kojom je osuđen
+                na kaznu zatvora u trajanju od 60 dana, zbog krivičnog djela sitna krađa, utaja i
+                prevara iz čl. 246 st. 1 KZ CG, Kv.br. 399/06 od 13.11.2006. godine, kojom je osuđen
+                na jedinstvenu kaznu zatvora u trajanju od 10 mjeseci, zbog krivičnog djela teška
+                krađa iz čl. 240 st. 1 tač. 1 KZ CG i krivičnog djela sitna krađa, utaja i prevara
+                iz čl. 246 st. 1 KZ CG, K.br. 709/05 od 05.07.2006. godine, kojom je osuđen na kazn
+                uzatvora u trajanju od 6 mjeseci, zbog krivičnog djela teška krađa iz čl. 240 st. 1
+                tač. 1 KZ CG, K.br. 622/06 od 31.12.2007. godine, kojom je osuđen na kaznu zatvora u
+                trajanju od 60 dana, zbog krivičnog djela sitna krađa, utaja i prevara iz čl. 246
+                st. 1 KZ CG, K.br. 89/08 od 14.08.2008. godine, kojom je osuđen na kaznu zatvora u
+                trajanju od 5 mjeseci, zbog krivičnog djela krađa iz čl. 239 st. 1 KZ CG, K.br.
+                831/08 od 11.02.2009. godine, kojom je osuđen na kaznu zatvora u trajanju od 3
+                mjeseca, zbog krivičnog djela krađa iz čl. 239 st. 1 KZ CG, K.br. 642/08 od
+                08.12.2008. godine, kojom je osuđen na kaznu zatvora u trajanju od 3 mjeseca, zbog
+                krivičnog djela krađa iz čl. 239 st. 1 KZ CG, K.br. 666/08 od 05.08.2009. godine,
+                kojom je osuđen na kaznu zatvora u trajanju od 3 mjeseca, zbog krivičnog djela
+                prevara iz čl. 244 st. 1 u vezi čl. 49 KZ CG, K.br. 871/08 od 02.04.2009. godine,
+                kojom je osuđen na kaznu zatvora u trajanju od 60 dana, zbog krivičnog djela sitna
+                krađa, utaja i prevara iz čl. 246 st. 1 KZ CG, K.br. 762/08 od 03.03.2009. godine,
+                kojom je osuđen na kaznu zatvora u trajanju od 85 dana, zbog krivičnog djela sitna
+                krađa, utaja i prevara iz čl. 246 st. 1 KZ CG, K.br. 513/05 od 25.09.2005. godine,
+                kojom je osuđen na kaznu zatvora u trajanju od 6 mjeseci, zbog krivičnog djela teška
+                krađa iz čl. 240 st. 1 tač. 1 KZ CG, K.br. 329/09 od 12.03.2010. godine, kojom je
+                osuđen na kaznu zatvora u trajanju od 5 mjeseci, zbog krivičnog djela krađa iz čl.
+                239 st. 1 KZ CG i K.br. 477/08 od 27.08.2010. godine, kojom je osuđen na kaznu
+                zatvora u trajanju od 3 mjeseca, zbog krivičnog djela sitna krađa, utaja i prevara
+                iz čl. 246 st. 1 u vezi čl. 49 KZ CG K R I V J E Što je: Dana 25.01.2021. godine oko
+                10:15 časova, u Nikšiću, ispred upravne zgrade Opšte bolnice u Nikšiću, svjestan
+                svog djela čije je izvršenje htio, znajući da je isto zabranjeno, u namjeri da
+                oduzimanjem tuđe pokretne stvari sebi pribavi protivpravnu imovinsku korist u
+                vrijednosti koja predlazi iznos od 150,00 eura, iz parkiranog putničkog motornog
+                vozila marke „Clio“ registarskih oznaka NK CB 456, oduzeo torbicu marke „Replay“
+                sivocrne boje, u kojoj se nalazi kožni novčanik u kojem je bio novac u iznosu od
+                110,00 eura, odnosno, dvije novčanice u apoenima od po 50,00 eura i jedna u apoenu
+                od 10,00 eura, mobilni telefon marke „HTC“ i lična dokumenta, sve vlasništvo
+                oštećenog Vorotović Bogdana iz Nikšića, na način što je otvorio vrata suvozača i
+                oduzeo navedenu torbicu koja se nalazila izmđu vozačevog i suvozačevog sjedišta, dok
+                je sa suvozačevog sjedišta oduzeo navedeni mobilni telefon, nakon čega se udaljio sa
+                lica mjesta, - čime je izvršio krivično djelo krađa iz čl. 239 st. 1 Krivičnog
+                zakonika Crne Gore, </p>
             <conclusions>
-                <p> Nakon čega sud primjenom čl. 48 st. 2 tač. 2 i čl. 51 st. 1 Krivičnog zakonika
-                    Crne Gore i čl. 226, čl. 229, <ref href="krivica#art_239">čl. 239</ref> , čl.
-                    303 i čl. 374 Zakonika o krivičnom postupku, optuženog O S U Đ U J E Na
-                    jedinstvenu kaznu zatvora u trajanju od 3 (godine) i 6 (šest) mjeseci, u koju
-                    kaznu mu se uračunava vrijeme provedeno u pritvoru od 06.12.2021. godine u 16.30
-                    časova, pa nadalje. Obavezuje se optuženi da plati po osnovu troškova krivičnog
-                    postupka iznos od 90,50 eura, u roku od 15 dana po pravosnažnosti presude, pod
-                    prijetnjom izvršenja, kao i da plati troškove koji se odnose na nagradu
-                    braniteljke po službenoj dužnosti, o čijoj visini će sud odlučiti posebnim
-                    rješenjem shodno čl. 227 st. 2 Zakonika o krivičnom postupku. Obavezuje se
-                    optuženi da na ime imovinsko pravnog zahtjeva oštećenom Ivanu Cvijoviću isplati
-                    iznos od 25,13 €, oštećenom S. R. iznos od 6.828,70 €, a sve u roku od 6 (šest)
-                    mjeseci od dana pravosnažnosti presude. Oštećena V. C. se upućuje da
-                    imovinskopravni zahtjev u cjelini može ostvarivati u parničnom postupku. </p>
+                <p> pa sud okrivljenog za navedeno krivično djelo primjenom čl. 4 st. 2, čl. 15, čl.
+                    32, čl. 36, čl. 42 st. 1, čl. 43, čl. 49
+                    i čl. 51 st. 1 Krivičnog zakonika Crne Gore, te čl. 226, čl. 229 i čl. 374 st. 1
+                    Zakonika o krivičnom postupku Crne
+                    Gore
+                    O S U Đ U J E
+                    Na kaznu zatvora u trajanju od 1 (jedne) godine i 6 (šest) mjeseci, koju je
+                    okrivljeni Ćiraković dužan izdržati po
+                    pravosnažnosti ove presude, a u koju kaznu mu se uračunava vrijeme provedeno u
+                    pritvoru, od 28.01.2021.
+                    godine od 08:50 časova, pa nadalje.
+                    Obavezuje se okrivljeni da na ime troškova krivičnog postupka plati iznos od
+                    599,50 eura, u roku od 15 dana
+                    od dana pravosnažnosti presude, pod prijetnjom prinudnog izvršenja, na žiro
+                    račun ovog suda br. 832-152-32
+                    i da dokaz o izvršenoj uplati dostavi sudu. </p>
             </conclusions>
         </judgmentBody>
     </judgment>

@@ -1,16 +1,16 @@
 #id;Sud;Poslovni broj;Sudija;Tuzilac;Okrivljeni;Krivicno delo;#Vrednost;Nasilno;Umisljaj;Nepogoda;Vrsta presude;Kazna(trajanje/evra);Primenjeni propisi
 0;Osnovni Sud u Podgorici;K 51/2022;Rade Ćetković;Osnovno drzavno tuzilastvo Podgorica;I.R.;Teška krađa;6828.70;ne;ne;ne;zatvorska;3.5;KZ,cl.240
 1;Osnovni Sud u Podgorici;K 640/2021;Larisa Mijušković-Stamatović;Osnovno drzavno tuzilastvo Podgorica;D.S.;Teška krađa;1000.00;ne;ne;da;novcana;1500.00;KZ,cl.240
-2;Osnovni Sud u Podgorici;K 51/2022;Rade Ćetković;Osnovno drzavno tuzilastvo Podgorica;I.R.;Teška krađa;6828.70;ne;ne;ne;zatvorska;3.5;KZ,cl.240
-3;Osnovni Sud u Podgorici;K 51/2022;Rade Ćetković;Osnovno drzavno tuzilastvo Podgorica;I.R.;Teška krađa;6828.70;ne;ne;ne;zatvorska;3.5;KZ,cl.240
-4;Osnovni Sud u Podgorici;K 51/2022;Rade Ćetković;Osnovno drzavno tuzilastvo Podgorica;I.R.;Teška krađa;6828.70;ne;ne;ne;zatvorska;3.5;KZ,cl.240
-5;Osnovni Sud u Podgorici;K 51/2022;Rade Ćetković;Osnovno drzavno tuzilastvo Podgorica;I.R.;Teška krađa;6828.70;ne;ne;ne;zatvorska;3.5;KZ,cl.240
-6;Osnovni Sud u Podgorici;K 51/2022;Rade Ćetković;Osnovno drzavno tuzilastvo Podgorica;I.R.;Teška krađa;6828.70;ne;ne;ne;zatvorska;3.5;KZ,cl.240
-7;Osnovni Sud u Podgorici;K 51/2022;Rade Ćetković;Osnovno drzavno tuzilastvo Podgorica;I.R.;Teška krađa;6828.70;ne;ne;ne;zatvorska;3.5;KZ,cl.240
-8;Osnovni Sud u Podgorici;K 51/2022;Rade Ćetković;Osnovno drzavno tuzilastvo Podgorica;I.R.;Teška krađa;6828.70;ne;ne;ne;zatvorska;3.5;KZ,cl.240
-9;Osnovni Sud u Podgorici;K 51/2022;Rade Ćetković;Osnovno drzavno tuzilastvo Podgorica;I.R.;Teška krađa;6828.70;ne;ne;ne;zatvorska;3.5;KZ,cl.240
-10;Osnovni Sud u Podgorici;K 51/2022;Rade Ćetković;Osnovno drzavno tuzilastvo Podgorica;I.R.;Teška krađa;6828.70;ne;ne;ne;zatvorska;3.5;KZ,cl.240
-11;Osnovni Sud u Podgorici;K 51/2022;Rade Ćetković;Osnovno drzavno tuzilastvo Podgorica;I.R.;Teška krađa;6828.70;ne;ne;ne;zatvorska;3.5;KZ,cl.240
-12;Osnovni Sud u Podgorici;K 51/2022;Rade Ćetković;Osnovno drzavno tuzilastvo Podgorica;I.R.;Teška krađa;6828.70;ne;ne;ne;zatvorska;3.5;KZ,cl.240
-13;Osnovni Sud u Podgorici;K 51/2022;Rade Ćetković;Osnovno drzavno tuzilastvo Podgorica;I.R.;Teška krađa;6828.70;ne;ne;ne;zatvorska;3.5;KZ,cl.240
-14;Osnovni Sud u Podgorici;K 51/2022;Rade Ćetković;Osnovno drzavno tuzilastvo Podgorica;I.R.;Teška krađa;6828.70;ne;ne;ne;zatvorska;3.5;KZ,cl.240
+2;Osnovni Sud u Nikšiću;K 49/2021;Sava Mušikić;Osnovno drzavno tuzilastvo Nikšić;Petar Ćiraković;Krađa;599.50;ne;da;ne;zatvorska;1.5;KZ,cl.240
+3;Osnovni Sud u Baru;K 83/2021;Tamara Spasojević;Osnovno drzavno tuzilastvo Bar;H.A.;Teška krađa;8338.00;da;ne;ne;zatvorska;3.0;KZ,cl.240
+4;Osnovni Sud u Baru;K 213/2021;Goran Scepanovic;Osnovno drzavno tuzilastvo Bar;V.R.;Krađa;250.00;ne;ne;ne;lecenje;3.0;KZ,cl.240
+5;Osnovni Sud u Baru;K 80/2021;Tamara Spasojević;Osnovno drzavno tuzilastvo Bar;S.M.;Teška krađa;2000.00;ne;ne;da;zatvorska;2.0;KZ,cl.240
+6;Osnovni Sud u Baru;K 308/2021;Tamara Spasojević;Osnovno drzavno tuzilastvo Bar;S.M.;Krađa;200.00;ne;ne;da;rad;2.0;KZ,cl.239
+7;Osnovni Sud u Baru;K 224/2021;Tamara Spasojević;Osnovno drzavno tuzilastvo Bar;B.A.;Krađa;1000.00;ne;ne;da;zatvorska;0.4;KZ,cl.239
+8;Osnovni Sud u Danilovgradu;K 4/2021;Sonja Keković;Osnovno drzavno tuzilastvo Danilovgrad;T.D.;Krađa;550.00;ne;ne;da;uslovna;0.5;KZ,cl.239
+9;Osnovni Sud u Podgorici;K 677/2021;Larisa Mijušković-Stamatović;Osnovno drzavno tuzilastvo Podgorica;D.A.;Krađa;1000.00;ne;ne;da;zatvorska;0.9;KZ,cl.239
+10;Osnovni Sud u Baru;K 190/2021;Tamara Spasojević;Osnovno drzavno tuzilastvo Bar;B.A.;Krađa;500.00;ne;ne;da;zatvorska;0.5;KZ,cl.239
+11;Osnovni Sud u Podgorici;K 34/2021;Nenad Vujanović;Osnovno drzavno tuzilastvo Podgorica;M.G.;Krađa;1000.00;ne;ne;ne;zatvorska;3.5;KZ,cl.240
+12;Osnovni Sud u Podgorici;K 830/2021;Larisa Mijušković-Stamatović;Osnovno drzavno tuzilastvo Podgorica;B.S.;Krađa;1150.00;ne;ne;da;zatvorska;0.5;KZ,cl.239
+13;Osnovni Sud u Podgorici;K 66/2021;Larisa Mijušković-Stamatović;Osnovno drzavno tuzilastvo Podgorica;D.R.;Krađa;550.00;ne;ne;da;lecenje;0.5;KZ,cl.239
+14;Osnovni Sud u Nikšiću;K 60/2021;Sava Mušikić;Osnovno drzavno tuzilastvo Nikšić;T.D.;Teška krađa;2599.50;ne;da;ne;zatvorska;1.5;KZ,cl.240
