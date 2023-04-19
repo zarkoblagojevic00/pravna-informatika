@@ -40,23 +40,23 @@ public class DocumentsController {
         return ResponseEntity.ok(fileNames);
     }
 
-    @GetMapping("/documents/judgement/xml/{id}")
+    @GetMapping("/documents/judgement/html/{id}")
     public ResponseEntity<?> judgementXML(@PathVariable String id) throws IOException, URISyntaxException {
         ClassLoader classLoader = DocumentsController.class.getClassLoader();
-        var resourceUrl = classLoader.getResource("documents/presude/" + id + ".xml");
+        var resourceUrl = classLoader.getResource("documents/html/presude/" + id + ".html");
 
         return ResponseEntity.ok()
-                .contentType(MediaType.APPLICATION_XHTML_XML)
+                .contentType(MediaType.TEXT_HTML)
                 .body(Files.readAllBytes(Path.of(resourceUrl.toURI())));
     }
 
-    @GetMapping("/documents/law/xml")
+    @GetMapping("/documents/law/html")
     public ResponseEntity<?> lawXML() throws IOException, URISyntaxException {
         ClassLoader classLoader = DocumentsController.class.getClassLoader();
-        var resourceUrl = classLoader.getResource("documents/zakon.xml");
+        var resourceUrl = classLoader.getResource("documents/html/zakon.html");
 
         return ResponseEntity.ok()
-                .contentType(MediaType.APPLICATION_XHTML_XML)
+                .contentType(MediaType.TEXT_HTML)
                 .body(Files.readAllBytes(Path.of(resourceUrl.toURI())));
     }
 
@@ -86,14 +86,23 @@ public class DocumentsController {
         var resourceUrl = classLoader.getResource("documents/presude/presude_extended.csv");
 
         CSVParser parser = CSVFormat.DEFAULT.withHeader().withDelimiter(';').parse(new FileReader(Path.of(resourceUrl.toURI()).toFile()));
-
         StringWriter stringWriter = new StringWriter();
         ObjectMapper mapper = new ObjectMapper();
 
-        for (CSVRecord record : parser) {
-            String json = mapper.writeValueAsString(record.toMap());
-            stringWriter.write(json + "\n");
+        stringWriter.write("[");
+
+        var iter = parser.iterator();
+        while (iter.hasNext()) {
+            var currentRecord = iter.next();
+            String json = mapper.writeValueAsString(currentRecord.toMap());
+            stringWriter.write(json);
+            if (iter.hasNext()) {
+                stringWriter.write(",");
+            }
         }
+        parser.close();
+
+        stringWriter.write("]");
 
         String jsonString = stringWriter.toString();
 

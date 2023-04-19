@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="w-100 h-100 d-flex flex-column">
       <Navbar />
-      <div className="col">
+      <div className="content-outlet overflow-hidden">
         <Outlet />
       </div>
     </div>

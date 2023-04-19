@@ -1,4 +1,6 @@
-const { REACT_APP_API_URL: apiUrl } = process.env;
+import { getApiUrl } from "../util";
+
+const apiUrl = getApiUrl();
 
 export default () => ({
   // path must not start with / (e.g. it must be posts/<post_id> not /posts/<post_id>)
@@ -12,6 +14,18 @@ export default () => ({
     }).then((response) => {
       if (response.ok) {
         return response.json();
+      }
+      throw response;
+    }),
+
+  fetchHTML: async ({ path }) =>
+    fetch(`${apiUrl}${path}`, {
+      headers: {
+        "Content-Type": "text/html",
+      },
+    }).then((response) => {
+      if (response.ok) {
+        return response.text();
       }
       throw response;
     }),
