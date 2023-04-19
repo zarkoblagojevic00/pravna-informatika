@@ -68,7 +68,7 @@ public class RuleBasedReasoningServiceImpl implements RuleBasedReasoningService 
                     "    <lc:case rdf:about=\"http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01\">\n" +
                     "        <lc:name>case 01</lc:name>\n" +
                     "        <lc:defendant>" + caseDescription.getOkrivljeni() + "</lc:defendant>\n" +
-                    "        <lc:value rdf:datatype=\"http://www.w3.org/2001/XMLSchema#integer\">" + caseDescription.getVrednost() + "</lc:value>\n" +
+                    "        <lc:value rdf:datatype=\"http://www.w3.org/2001/XMLSchema#decimal\">" + caseDescription.getVrednost() + "</lc:value>\n" +
                     "        <lc:violent>" + transform(caseDescription.getNasilno()) + "</lc:violent>\n" +
                     "        <lc:premeditation>" + transform(caseDescription.getUmisljaj()) + "</lc:premeditation>\n" +
                     "        <lc:disaster>" + transform(caseDescription.getNepogoda()) + "</lc:disaster>\n" +
@@ -124,6 +124,9 @@ public class RuleBasedReasoningServiceImpl implements RuleBasedReasoningService 
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        if (ret.length() < 2)
+            return "Nema informacija o primenjenim zakonskim odredbama.";
 
         ret.setLength(ret.length() - 2);
         return ret.toString();
