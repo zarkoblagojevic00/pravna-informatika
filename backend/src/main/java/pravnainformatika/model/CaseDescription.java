@@ -30,11 +30,11 @@ public class CaseDescription implements CaseComponent {
 
     @Override
     public String toString() {
-        return "CaseDescription [id=" + id + ", sud=" + sud + ", poslovniBroj=" + poslovniBroj + ", sudija=" + sudija
+        return "id=" + id + ", sud=" + sud + ", poslovniBroj=" + poslovniBroj + ", sudija=" + sudija
                 + ", tuzilac=" + tuzilac + ", okrivljeni=" + okrivljeni + ", krivicnoDelo=" + krivicnoDelo
                 + ", vrednost=" + vrednost + ", nasilno=" + nasilno + ", umisljaj=" + umisljaj
                 + ", nepogoda=" + nepogoda + ", vrstaPresude=" + vrstaPresude + ", kazna(trajanje/evra)=" + kazna
-                + ", primenjeniPropisi=" + primenjeniPropisi + "]";
+                + ", primenjeniPropisi=" + primenjeniPropisi;
     }
 
     @Override

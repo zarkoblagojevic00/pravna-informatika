@@ -11,6 +11,9 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Function;
 
 @Service
 public class RuleBasedReasoningServiceImpl implements RuleBasedReasoningService {
@@ -22,7 +25,7 @@ public class RuleBasedReasoningServiceImpl implements RuleBasedReasoningService 
         writeFacts(caseDescription);
         Path scriptPath = Paths.get(drDevicePath.toString(), "start.bat");
         runScriptFromDirectory(scriptPath, drDevicePath);
-        return readExport();
+        return translate(readExport());
     }
 
     @Override
@@ -66,9 +69,9 @@ public class RuleBasedReasoningServiceImpl implements RuleBasedReasoningService 
                     "        <lc:name>case 01</lc:name>\n" +
                     "        <lc:defendant>" + caseDescription.getOkrivljeni() + "</lc:defendant>\n" +
                     "        <lc:value rdf:datatype=\"http://www.w3.org/2001/XMLSchema#integer\">" + caseDescription.getVrednost() + "</lc:value>\n" +
-                    "        <lc:violent>" + transformString(caseDescription.getNasilno()) + "</lc:violent>\n" +
-                    "        <lc:premeditation>" + transformString(caseDescription.getUmisljaj()) + "</lc:premeditation>\n" +
-                    "        <lc:disaster>" + transformString(caseDescription.getNepogoda()) + "</lc:disaster>\n" +
+                    "        <lc:violent>" + transform(caseDescription.getNasilno()) + "</lc:violent>\n" +
+                    "        <lc:premeditation>" + transform(caseDescription.getUmisljaj()) + "</lc:premeditation>\n" +
+                    "        <lc:disaster>" + transform(caseDescription.getNepogoda()) + "</lc:disaster>\n" +
                     "    </lc:case>\n" +
                     "</rdf:RDF>";
             out.print(s);
@@ -77,8 +80,25 @@ public class RuleBasedReasoningServiceImpl implements RuleBasedReasoningService 
         }
     }
 
-    private String transformString(String s) {
+    private String transform(String s) {
         return s.equals("da") ? "yes" : "no";
+    }
+
+    private String translate(String stringToTranslate) {
+        Map<String, String> dictionary = new HashMap<>();
+        dictionary.put("is_theft", "Krađa");
+        dictionary.put("is_aggravated_theft_lv1", "Teška krađa-prvi stepen");
+        dictionary.put("is_aggravated_theft_lv2", "Teška krađa-prvi stepen");
+        dictionary.put("min_imprisonment", "Minimalna zatvorska kazna");
+        dictionary.put("max_imprisonment", "Maksimalna zatvorska kazna");
+        dictionary.put("value", "vrednost");
+        dictionary.put("defendant", "okrivljani");
+        return  dictionary.entrySet().stream()
+                .map(entryToReplace -> (Function<String, String>) s ->
+                        s.replace(entryToReplace.getKey(), entryToReplace.getValue()))
+                .reduce(Function.identity(), Function::andThen)
+                .apply(stringToTranslate);
+
     }
 
     private String readExport() {
@@ -98,7 +118,7 @@ public class RuleBasedReasoningServiceImpl implements RuleBasedReasoningService 
                     String nodeName = node.getNodeName().split(":")[1];
                     String childNodeName = node.getChildNodes().item(1).getNodeName().split(":")[1];
                     String childNodeText = node.getChildNodes().item(1).getTextContent();
-                    ret.append(nodeName).append(": ").append(childNodeName).append(" = ").append(childNodeText).append(", ");
+                    ret.append(nodeName).append(": ").append(childNodeName).append("=").append(childNodeText).append(", ");
                 }
             }
         } catch (Exception e) {
