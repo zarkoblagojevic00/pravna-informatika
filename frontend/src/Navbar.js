@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className="navbar">
       <ul className="navbar-list">
         <li className="navbar-item">
-          <NavLink to="/" className={getNavLinkStyle}>
+          <NavLink to="/law" className={getNavLinkStyle}>
             Zakonik
           </NavLink>
         </li>

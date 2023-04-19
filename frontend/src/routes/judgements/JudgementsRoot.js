@@ -1,5 +1,5 @@
 import "./JudgementsRoot.css";
-import DisplayPDF from "./DisplayPDF";
+import DisplayPDF from "../DisplayPDF";
 import JudgementFeatures from "./JudgementFeatures";
 import { useEffect, useState } from "react";
 import {

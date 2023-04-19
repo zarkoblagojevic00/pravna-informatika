@@ -8,6 +8,8 @@ export const getJudgementNames = () =>
 export const getJudgementHTML = (judgementId) =>
   proxy.fetchHTML({ path: `documents/judgement/html/${judgementId}` });
 
+export const getLawHTML = () => proxy.fetchHTML({ path: `documents/law/html` });
+
 export const getJudgementFeatures = () =>
   proxy
     .fetchHTML({ path: `documents/features` })
