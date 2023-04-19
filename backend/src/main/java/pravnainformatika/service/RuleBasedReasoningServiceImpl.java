@@ -88,7 +88,7 @@ public class RuleBasedReasoningServiceImpl implements RuleBasedReasoningService 
         Map<String, String> dictionary = new HashMap<>();
         dictionary.put("is_theft", "Krađa");
         dictionary.put("is_aggravated_theft_lv1", "Teška krađa-prvi stepen");
-        dictionary.put("is_aggravated_theft_lv2", "Teška krađa-prvi stepen");
+        dictionary.put("is_aggravated_theft_lv2", "Teška krađa-drugi stepen");
         dictionary.put("min_imprisonment", "Minimalna zatvorska kazna");
         dictionary.put("max_imprisonment", "Maksimalna zatvorska kazna");
         dictionary.put("value", "vrednost");
