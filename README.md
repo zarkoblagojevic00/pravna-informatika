@@ -10,10 +10,11 @@ Da bi se koristila potrebno je:
 
 ./mvnw spring-boot:run
 
-iz foldera pravna-informatika/backend)
-3. podesiti environment promenljivu za frontend tako što će se kreirati fajl sa nazivom
+iz foldera pravna-informatika/backend)  
 
-env.development.local
+**3. podesiti environment promenljivu za frontend** tako što će se kreirati fajl sa nazivom
+
+.env.development.local
 
 u folderu pravna-informatika/frontend i u njega upisati
 
@@ -21,14 +22,14 @@ REACT_APP_API_URL='http://localhost:8080/'
 
 jer je to port na kome podrazumevano trči bekend, po potrebi konfigurisati drugačije  
 
-**3. pokrenuti frontend aplikaciju** (koja je react aplikacija, pa se pokreće komandama
+**4. pokrenuti frontend aplikaciju** (koja je react aplikacija, pa se pokreće komandama
 
 ./npm install  
 ./npm start
 
 iz foldera pravna-informatika/frontend)
 
-**4. koristiti aplikaciju iz prozora koji se automatski otvorio, odnosno sa localhost:3000**
+**5. koristiti aplikaciju iz prozora koji se automatski otvorio, odnosno sa localhost:3000**
 
 Za pregled Akoma Ntoso i ostalih fajlova pogledati pravna-informatika\backend\src\main\resources\documents.  
 Za demonstraciju automatske ekstrakcije atributa pokrenuti pravna-informatika/extraction.py skriptu koristeći Python 3.x, ne koriste se nikakvi dependency-i.  
