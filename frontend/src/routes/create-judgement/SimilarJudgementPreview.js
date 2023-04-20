@@ -30,7 +30,7 @@ export default function SimilarJudgementPreview({ judgement }) {
             <span className="judgement-tag">Nepogoda</span>
           )}
           {judgement.umisljaj === "da" && (
-            <span className="judgement-tag">Umisljaj</span>
+            <span className="judgement-tag">Umišljaj</span>
           )}
         </p>
         <a href={`judgements/${judgement.id}`} className="btn btn-primary">

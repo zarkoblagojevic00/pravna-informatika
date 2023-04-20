@@ -20,6 +20,15 @@ export default function JudgementsRoot() {
       : null;
 
   useEffect(() => {
+    if (window.location.href) {
+      const idx = window.location.href.lastIndexOf("/");
+      setTimeout(
+        () => setSelectedJudgement(window.location.href.slice(idx + 1)),
+        300
+      );
+    }
+  }, []);
+  useEffect(() => {
     getJudgementNames()
       .then((data) => {
         setJudgementNames(data);
