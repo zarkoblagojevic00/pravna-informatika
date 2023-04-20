@@ -101,7 +101,7 @@ public class CaseBasedReasoningServiceImpl implements CaseBasedReasoningService,
         eval = SelectCases.selectTopKRR(eval, 5);
         System.out.println("Retrieved cases:");
         for (RetrievalResult nse : eval)
-            System.out.println(nse.get_case().getDescription() + " -> " + nse.getEval());
+            System.out.println(nse.get_case().getDescription() + ", slicnost=" + nse.getEval());
     }
 
     public List<String> getSimilarCases(CBRQuery query) throws ExecutionException {
@@ -109,7 +109,7 @@ public class CaseBasedReasoningServiceImpl implements CaseBasedReasoningService,
         eval = SelectCases.selectTopKRR(eval, 5);
         List<String> similarCases = new ArrayList<>();
         for (RetrievalResult nse : eval)
-            similarCases.add(nse.get_case().getDescription() + " -> " + nse.getEval());
+            similarCases.add(nse.get_case().getDescription() + ", slicnost=" + nse.getEval());
         return similarCases;
     }
 

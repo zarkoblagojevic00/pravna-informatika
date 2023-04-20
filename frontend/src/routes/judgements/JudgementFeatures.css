@@ -1,15 +1,13 @@
 .features-title {
-    font-size: 1.2rem;
-    font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .feature-key {
-    color: var(--orange);
-    font-weight: 600;
-    margin-right: 5px;
-
+  color: var(--orange);
+  font-weight: 600;
+  margin-right: 5px;
 }
 
 .feature-value {
-
 }
