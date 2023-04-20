@@ -14,7 +14,7 @@ export default function Navbar() {
           </NavLink>
         </li>
         <li className="navbar-item">
-          <NavLink to="/judgements" className={getNavLinkStyle}>
+          <NavLink to="/judgements" className={getNavLinkStyle} partial>
             Presude
           </NavLink>
         </li>

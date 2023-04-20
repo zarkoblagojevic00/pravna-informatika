@@ -1,21 +1,16 @@
 import "./JudgementsRoot.css";
-import DisplayPDF from "../DisplayPDF";
+
 import JudgementFeatures from "./JudgementFeatures";
 import { useEffect, useState } from "react";
 import {
   getJudgementNames,
-  getJudgementHTML,
   getJudgementFeatures,
 } from "../../services/document-service";
-import { getApiUrl } from "../../util";
-import { Autocomplete, TextField } from "@mui/material";
-
-const apiUrl = getApiUrl();
+import { NavLink, Outlet } from "react-router-dom";
 
 export default function JudgementsRoot() {
   const [judgementNames, setJudgementNames] = useState([]);
   const [selectedJudgement, setSelectedJudgement] = useState("");
-  const [judgementHTML, setJudgementHTML] = useState("");
   const [judgmentFeatures, setJudgementFeatures] = useState({});
   const featuresLoaded = Object.keys(judgmentFeatures).length > 0;
 
@@ -44,51 +39,25 @@ export default function JudgementsRoot() {
       .catch(console.error);
   }, []);
 
-  useEffect(() => {
-    if (!selectedJudgement) return;
-    getJudgementHTML(selectedJudgement)
-      .then((html) => {
-        setJudgementHTML(html);
-      })
-      .catch(console.error);
-  }, [selectedJudgement]);
-
   return (
     <div className="d-flex h-100">
-      <div className="d-flex col">
-        {selectedJudgement && (
-          <div className="w-50 pdf-preview">
-            <DisplayPDF
-              url={`${apiUrl}documents/judgement/pdf/${selectedJudgement}`}
-            />
-          </div>
-        )}
-        <div className="w-50 html-preview text-center">
-          <div className="title-header">Presuda {selectedJudgement}</div>
-          <div
-            className="html-content"
-            dangerouslySetInnerHTML={{ __html: judgementHTML }}
-          ></div>
-        </div>
-      </div>
+      <Outlet></Outlet>
       <div className="judgements-sidebar">
         <div className="title-header">Pregled presuda</div>
-        <div className="sidebar-content">
-          <div className="my-2">
-            <Autocomplete
-              disablePortal
-              disableClearable
-              id="combo-box-demo"
-              options={judgementNames}
-              renderInput={(params) => (
-                <TextField {...params} label="Odaberite presudu" />
-              )}
-              getOptionLabel={(option) => `Presuda ${option}`}
-              value={selectedJudgement}
-              onChange={(event, newValue) => {
-                setSelectedJudgement(newValue);
-              }}
-            />
+        <div className="sidebar-content h-100">
+          <div className="my-2 overflow-auto" style={{ height: "20%" }}>
+            {judgementNames &&
+              judgementNames.map((name) => (
+                <li key={name} className="j-nav-item">
+                  <NavLink
+                    onClick={() => setSelectedJudgement(name)}
+                    className="j-nav-link"
+                    to={`${name}`}
+                  >
+                    Presuda {name}
+                  </NavLink>
+                </li>
+              ))}
           </div>
           {selectedJudgement && featuresLoaded && (
             <JudgementFeatures features={selectedJudgementFeatures} />

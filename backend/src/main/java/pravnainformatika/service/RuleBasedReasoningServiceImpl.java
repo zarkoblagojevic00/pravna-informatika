@@ -92,7 +92,7 @@ public class RuleBasedReasoningServiceImpl implements RuleBasedReasoningService 
         dictionary.put("min_imprisonment", "Minimalna zatvorska kazna");
         dictionary.put("max_imprisonment", "Maksimalna zatvorska kazna");
         dictionary.put("value", "vrednost");
-        dictionary.put("defendant", "okrivljani");
+        dictionary.put("defendant", "okrivljeni");
         return  dictionary.entrySet().stream()
                 .map(entryToReplace -> (Function<String, String>) s ->
                         s.replace(entryToReplace.getKey(), entryToReplace.getValue()))
@@ -124,6 +124,8 @@ public class RuleBasedReasoningServiceImpl implements RuleBasedReasoningService 
         } catch (Exception e) {
             e.printStackTrace();
         }
+        System.out.println("-----------------------------------------------------------------------");
+        System.out.println(ret.toString());
 
         if (ret.length() < 2)
             return "Nema informacija o primenjenim zakonskim odredbama.";
