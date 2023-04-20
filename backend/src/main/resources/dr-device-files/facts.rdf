@@ -5,10 +5,10 @@
         xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#">
     <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01">
         <lc:name>case 01</lc:name>
-        <lc:defendant>I.R.</lc:defendant>
-        <lc:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000.0</lc:value>
-        <lc:violent>no</lc:violent>
+        <lc:defendant>M. R.</lc:defendant>
+        <lc:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350.0</lc:value>
+        <lc:violent>yes</lc:violent>
         <lc:premeditation>no</lc:premeditation>
-        <lc:disaster>yes</lc:disaster>
+        <lc:disaster>no</lc:disaster>
     </lc:case>
 </rdf:RDF>

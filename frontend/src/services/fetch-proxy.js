@@ -12,8 +12,13 @@ export default () => ({
       },
       ...(method !== "GET" && { body: JSON.stringify(data) }),
     }).then((response) => {
+      console.log(response);
       if (response.ok) {
-        return response.json();
+        try {
+          return response.json();
+        } catch (err) {
+          console.log(err);
+        }
       }
       throw response;
     }),
